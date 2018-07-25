@@ -13,18 +13,22 @@ class Application(tornado.web.Application):
     """"""
     def __init__(self, *args,**kwargs):
         super(Application,self).__init__(*args,**kwargs)
-        self.db=tornado.Connection(
-            host=config.mysql_options['host'],
-            database=config.mysql_options['database'],
-            user=config.mysql_options['user'],
-            password=config.mysql_options['password']
-        )
-        self.redis = redis.StrictRedis(
-            host=config.redis_options['host'],
-            port=config.redis_options['port']
-        )
+        # self.db=tornado.Connection(
+        #     host=config.mysql_options['host'],
+        #     database=config.mysql_options['database'],
+        #     user=config.mysql_options['user'],
+        #     password=config.mysql_options['password']
+        # )
+        self.db = tornado.Connection(**config.mysql_options)
+        # self.redis = redis.StrictRedis(
+        #     host=config.redis_options['host'],
+        #     port=config.redis_options['port']
+        # )
+        self.redis = redis.StrictRedis(**config.redis_options)
 
 def main():
+    options.logging = config.log_level
+    options.log_file_prefix = config.log_file
     tornado.options.parse_command_line()
     app = tornado.web.Application(
         handlers, **config.settings

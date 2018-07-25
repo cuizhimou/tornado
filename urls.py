@@ -3,5 +3,5 @@
 from handlers import Passport
 
 handlers = [
-    (r"/",Passport.IndexHander),
+    (r"/",Passport.IndexHandler),
 ]

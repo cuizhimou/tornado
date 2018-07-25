@@ -1,0 +1,25 @@
+[W 180724 15:21:00 Passport:11] warning msg
+[E 180724 15:21:00 Passport:12] error_msg
+[W 180724 15:21:33 Passport:11] warning msg
+[E 180724 15:21:33 Passport:12] error_msg
+[D 180724 15:24:22 Passport:9] debug msg
+[I 180724 15:24:22 Passport:10] info msg
+[W 180724 15:24:22 Passport:11] warning msg
+[E 180724 15:24:22 Passport:12] error_msg
+[I 180724 15:24:22 web:2106] 304 GET / (127.0.0.1) 4.05ms
+[I 180724 15:28:31 autoreload:196] /Users/cui/PycharmProjects/tornado/config.py modified; restarting server
+[D 180724 15:50:56 Passport:9] debug msg
+[I 180724 15:50:56 Passport:10] info msg
+[W 180724 15:50:56 Passport:11] warning msg
+[E 180724 15:50:56 Passport:12] error_msg
+[I 180724 15:50:56 web:2106] 304 GET / (127.0.0.1) 4.01ms
+[D 180724 15:51:01 Passport:9] debug msg
+[I 180724 15:51:01 Passport:10] info msg
+[W 180724 15:51:01 Passport:11] warning msg
+[E 180724 15:51:01 Passport:12] error_msg
+[I 180724 15:51:01 web:2106] 304 GET / (127.0.0.1) 2.09ms
+[D 180724 16:00:20 Passport:9] debug msg
+[I 180724 16:00:20 Passport:10] info msg
+[W 180724 16:00:20 Passport:11] warning msg
+[E 180724 16:00:20 Passport:12] error_msg
+[I 180724 16:00:20 web:2106] 304 GET / (127.0.0.1) 1.11ms
