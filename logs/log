@@ -23,3 +23,600 @@
 [W 180724 16:00:20 Passport:11] warning msg
 [E 180724 16:00:20 Passport:12] error_msg
 [I 180724 16:00:20 web:2106] 304 GET / (127.0.0.1) 1.11ms
+[D 180725 11:26:45 Passport:9] debug msg
+[I 180725 11:26:45 Passport:10] info msg
+[W 180725 11:26:45 Passport:11] warning msg
+[E 180725 11:26:45 Passport:12] error_msg
+[I 180725 11:26:45 web:2106] 304 GET / (127.0.0.1) 3.56ms
+[I 180725 11:26:45 web:2106] 200 GET /favicon.ico (127.0.0.1) 28.30ms
+[W 180725 11:27:06 web:2106] 404 GET /api/code_id=123&pcode_id= (127.0.0.1) 4.06ms
+[W 180725 11:28:41 web:2106] 404 GET /api/imagecode=123&pcode_id= (127.0.0.1) 0.60ms
+[W 180725 11:28:43 web:2106] 404 GET /api/imagecode=123&pcode_id= (127.0.0.1) 0.64ms
+[I 180725 11:28:43 web:2106] 200 GET /favicon.ico (127.0.0.1) 2.66ms
+[W 180725 11:29:07 web:1618] 400 GET /api/imagecode?code_id=123&pcode_id= (127.0.0.1): Missing argument codeid
+[W 180725 11:29:07 web:2106] 400 GET /api/imagecode?code_id=123&pcode_id= (127.0.0.1) 0.71ms
+[W 180725 11:29:27 web:1618] 400 GET /api/imagecode?codeid=123&pcode_id= (127.0.0.1): Missing argument pcodeid
+[W 180725 11:29:27 web:2106] 400 GET /api/imagecode?codeid=123&pcode_id= (127.0.0.1) 0.76ms
+[W 180725 11:29:29 web:1618] 400 GET /api/imagecode?codeid=123&pcode_id= (127.0.0.1): Missing argument pcodeid
+[W 180725 11:29:29 web:2106] 400 GET /api/imagecode?codeid=123&pcode_id= (127.0.0.1) 0.74ms
+[E 180725 11:31:16 web:1621] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 22, in get
+        name,text,image = captcha.generate_captcha
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 180725 11:31:16 web:2106] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 0.95ms
+[E 180725 11:31:20 web:1621] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 22, in get
+        name,text,image = captcha.generate_captcha
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 180725 11:31:20 web:2106] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.67ms
+[I 180725 11:32:39 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[E 180725 11:32:53 web:1621] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 22, in get
+        name,text,image = captcha.generate_captcha()
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 180725 11:32:53 web:2106] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 2.24ms
+[E 180725 11:32:54 web:1621] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 22, in get
+        name,text,image = captcha.generate_captcha()
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 180725 11:32:54 web:2106] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.06ms
+[E 180725 11:33:53 web:1621] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 22, in get
+        name,text,image = captcha.generate_captcha()
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 180725 11:33:53 web:2106] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.31ms
+[I 180725 11:35:16 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[E 180725 11:35:18 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:35:18 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 37.71ms
+[E 180725 11:40:50 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:40:50 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 18.50ms
+[I 180725 11:41:27 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[E 180725 11:41:28 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:41:28 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 42.19ms
+[E 180725 11:41:52 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:41:52 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 14.61ms
+[E 180725 11:41:54 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:41:54 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 11.55ms
+[E 180725 11:41:56 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:41:56 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 12.26ms
+[E 180725 11:41:57 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:41:57 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 12.32ms
+[D 180725 11:53:57 Passport:9] debug msg
+[I 180725 11:53:57 Passport:10] info msg
+[W 180725 11:53:57 Passport:11] warning msg
+[E 180725 11:53:57 Passport:12] error_msg
+[I 180725 11:53:57 web:2106] 304 GET / (127.0.0.1) 4.59ms
+[E 180725 11:54:02 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 11:54:02 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 14.18ms
+[D 180725 14:13:02 Passport:9] debug msg
+[I 180725 14:13:02 Passport:10] info msg
+[W 180725 14:13:02 Passport:11] warning msg
+[E 180725 14:13:02 Passport:12] error_msg
+[I 180725 14:13:02 web:2106] 304 GET / (127.0.0.1) 2.98ms
+[E 180725 14:13:11 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180725 14:13:11 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 15.17ms
+[D 180726 14:18:35 Passport:9] debug msg
+[I 180726 14:18:35 Passport:10] info msg
+[W 180726 14:18:35 Passport:11] warning msg
+[E 180726 14:18:35 Passport:12] error_msg
+[I 180726 14:18:35 web:2106] 304 GET / (127.0.0.1) 3.90ms
+[E 180726 14:18:41 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180726 14:18:41 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 81.06ms
+[D 180726 15:21:43 Passport:9] debug msg
+[I 180726 15:21:43 Passport:10] info msg
+[W 180726 15:21:43 Passport:11] warning msg
+[E 180726 15:21:43 Passport:12] error_msg
+[I 180726 15:21:43 web:2106] 304 GET / (127.0.0.1) 1.85ms
+[E 180726 15:21:49 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180726 15:21:49 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 47.76ms
+[E 180726 15:24:19 VerifyCode:26] 'Application' object has no attribute 'redis'
+[I 180726 15:24:19 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 10.89ms
+[I 180726 15:24:19 web:2106] 200 GET /favicon.ico (127.0.0.1) 13.75ms
+[D 180731 11:09:34 Passport:9] debug msg
+[I 180731 11:09:34 Passport:10] info msg
+[W 180731 11:09:34 Passport:11] warning msg
+[E 180731 11:09:34 Passport:12] error_msg
+[I 180731 11:09:34 web:2106] 304 GET / (127.0.0.1) 3.57ms
+[E 180731 11:09:42 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180731 11:09:42 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 119.27ms
+[D 180801 11:55:33 Passport:9] debug msg
+[I 180801 11:55:33 Passport:10] info msg
+[W 180801 11:55:33 Passport:11] warning msg
+[E 180801 11:55:33 Passport:12] error_msg
+[I 180801 11:55:33 web:2106] 304 GET / (127.0.0.1) 3.95ms
+[E 180801 11:55:37 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180801 11:55:37 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 75.79ms
+[D 180825 11:23:54 Passport:9] debug msg
+[I 180825 11:23:54 Passport:10] info msg
+[W 180825 11:23:54 Passport:11] warning msg
+[E 180825 11:23:54 Passport:12] error_msg
+[I 180825 11:23:54 web:2106] 200 GET / (127.0.0.1) 3.61ms
+[I 180825 11:23:55 web:2106] 200 GET /favicon.ico (127.0.0.1) 11.16ms
+[I 180912 16:41:23 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[E 180912 16:42:05 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 16:42:05 web:2106] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 86.63ms
+[I 180912 16:42:06 web:2106] 200 GET /favicon.ico (127.0.0.1) 15.61ms
+[I 180912 16:49:23 autoreload:196] /Users/cui/PycharmProjects/tornado/urls.py modified; restarting server
+[D 180912 16:56:34 Passport:9] debug msg
+[I 180912 16:56:34 Passport:10] info msg
+[W 180912 16:56:34 Passport:11] warning msg
+[E 180912 16:56:34 Passport:12] error_msg
+[I 180912 16:56:34 web:2106] 200 GET / (127.0.0.1) 4.34ms
+[D 180912 16:56:46 Passport:9] debug msg
+[I 180912 16:56:46 Passport:10] info msg
+[W 180912 16:56:46 Passport:11] warning msg
+[E 180912 16:56:46 Passport:12] error_msg
+[I 180912 16:56:46 web:2106] 304 GET / (127.0.0.1) 1.34ms
+[I 180912 17:01:41 autoreload:196] /Users/cui/PycharmProjects/tornado/urls.py modified; restarting server
+[I 180912 17:01:42 web:2106] 200 GET / (127.0.0.1) 14.23ms
+[I 180912 17:01:42 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 31.80ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 26.80ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 23.06ms
+[I 180912 17:01:42 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 19.67ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 16.35ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 33.34ms
+[I 180912 17:01:42 web:2106] 200 GET /static/css/ihome/index.css (127.0.0.1) 28.69ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 12.80ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 13.61ms
+[I 180912 17:01:42 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 32.34ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 26.49ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 23.01ms
+[I 180912 17:01:42 web:2106] 200 GET /static/js/template.js (127.0.0.1) 29.47ms
+[I 180912 17:01:42 web:2106] 200 GET /static/js/ihome/index.js (127.0.0.1) 24.19ms
+[I 180912 17:01:42 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 20.72ms
+[I 180912 17:01:42 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 17.49ms
+[W 180912 17:01:42 web:2106] 404 GET /api/check_login (127.0.0.1) 3.97ms
+[W 180912 17:01:42 web:2106] 404 GET /api/house/index (127.0.0.1) 1.53ms
+[I 180912 17:01:42 web:2106] 200 GET /favicon.ico (127.0.0.1) 6.55ms
+[W 180912 17:01:47 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.70ms
+[I 180912 17:01:47 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 17.17ms
+[I 180912 17:02:24 web:2106] 200 GET /register.html (127.0.0.1) 3.06ms
+[I 180912 17:02:24 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 3.34ms
+[I 180912 17:02:24 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.54ms
+[W 180912 17:02:25 web:2106] 404 GET /api/piccode?pre=&cur=49b8b0d5-b3a1-4f6f-9b80-d898730bec8e (127.0.0.1) 2.18ms
+[W 180912 17:02:44 web:2106] 404 GET /api/piccode?pre=49b8b0d5-b3a1-4f6f-9b80-d898730bec8e&cur=77574ac5-00c5-4cd2-83dc-96697256aa0d (127.0.0.1) 1.67ms
+[I 180912 17:05:59 web:2106] 304 GET /register.html (127.0.0.1) 1.88ms
+[W 180912 17:05:59 web:2106] 404 GET /api/piccode?pre=&cur=73c76954-5a19-4076-bc03-8803de20de3c (127.0.0.1) 1.66ms
+[I 180912 17:06:02 web:2106] 304 GET /register.html (127.0.0.1) 1.05ms
+[W 180912 17:06:02 web:2106] 404 GET /api/piccode?pre=&cur=2a6ce063-b0c9-417d-9eb5-a73f9af911a0 (127.0.0.1) 1.51ms
+[I 180912 17:06:03 web:2106] 304 GET /register.html (127.0.0.1) 1.68ms
+[W 180912 17:06:03 web:2106] 404 GET /api/piccode?pre=&cur=f01ed239-e164-43d5-8ba3-f96e8ce89716 (127.0.0.1) 1.38ms
+[W 180912 17:07:05 web:2106] 404 GET /api/piccode?pre=&cur=9479dbb5-be59-4e53-9e65-9ffa43f2eac2 (127.0.0.1) 0.86ms
+[W 180912 17:07:07 web:2106] 404 GET /api/piccode?pre=9479dbb5-be59-4e53-9e65-9ffa43f2eac2&cur=dc4f41f0-86f4-4c39-aea0-37daeed4bc46 (127.0.0.1) 1.95ms
+[W 180912 17:07:23 web:2106] 404 GET /api/piccode?pre=&cur=9479dbb5-be59-4e53-9e65-9ffa43f2eac2 (127.0.0.1) 1.33ms
+[I 180912 17:08:02 web:2106] 304 GET /register.html (127.0.0.1) 13.29ms
+[W 180912 17:08:02 web:2106] 404 GET /api/piccode?pre=&cur=90a6d4fb-8e2d-4346-96aa-f70db5442d56 (127.0.0.1) 5.54ms
+[I 180912 17:13:18 web:2106] 200 GET / (127.0.0.1) 3.16ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 20.73ms
+[I 180912 17:13:18 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 17.12ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 14.57ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 10.68ms
+[I 180912 17:13:18 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 6.73ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 29.89ms
+[I 180912 17:13:18 web:2106] 200 GET /static/css/ihome/index.css (127.0.0.1) 27.01ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 17.51ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 10.19ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 6.38ms
+[I 180912 17:13:18 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 25.67ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 15.70ms
+[I 180912 17:13:18 web:2106] 200 GET /static/js/template.js (127.0.0.1) 14.95ms
+[I 180912 17:13:18 web:2106] 200 GET /static/js/ihome/index.js (127.0.0.1) 10.60ms
+[I 180912 17:13:18 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 8.06ms
+[W 180912 17:13:18 web:2106] 404 GET /api/check_login (127.0.0.1) 1.21ms
+[W 180912 17:13:18 web:2106] 404 GET /api/house/index (127.0.0.1) 0.90ms
+[I 180912 17:13:18 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.19ms
+[I 180912 17:13:18 web:2106] 200 GET /favicon.ico (127.0.0.1) 3.48ms
+[W 180912 17:13:26 web:2106] 404 GET /register.heml (127.0.0.1) 2.37ms
+[W 180912 17:13:29 web:2106] 404 GET /register.heml (127.0.0.1) 0.77ms
+[I 180912 17:13:33 web:2106] 200 GET /register.html (127.0.0.1) 2.61ms
+[I 180912 17:13:33 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 10.16ms
+[I 180912 17:13:33 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 5.82ms
+[E 180912 17:13:33 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:13:33 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:13:33 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=1aafca1f-2af7-46b4-9e43-c066e872d73e (127.0.0.1) 69.72ms
+[E 180912 17:13:36 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:13:36 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:13:36 web:2106] 200 GET /api/imagecode?codeid=1aafca1f-2af7-46b4-9e43-c066e872d73e&pcodeid=3325263d-7d4a-433f-a537-cb8a2df51243 (127.0.0.1) 13.96ms
+[E 180912 17:13:36 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:13:36 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:13:36 web:2106] 200 GET /api/imagecode?codeid=3325263d-7d4a-433f-a537-cb8a2df51243&pcodeid=193e4eef-8981-4787-bcf6-722911b7fa4d (127.0.0.1) 14.40ms
+[E 180912 17:13:37 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:13:37 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:13:37 web:2106] 200 GET /api/imagecode?codeid=193e4eef-8981-4787-bcf6-722911b7fa4d&pcodeid=f4454566-f312-46c8-bcfc-7b0b71e0b3fd (127.0.0.1) 15.49ms
+[I 180912 17:13:46 web:2106] 304 GET /register.html (127.0.0.1) 1.60ms
+[W 180912 17:13:46 web:2106] 404 GET /api/piccode?pre=&cur=828570ac-ac6d-477a-9881-3f4e8de2c77e (127.0.0.1) 1.78ms
+[W 180912 17:13:48 web:2106] 404 GET /api/piccode?pre=828570ac-ac6d-477a-9881-3f4e8de2c77e&cur=e15c2305-7292-4c8e-824a-7f2dbc2ebfb8 (127.0.0.1) 1.22ms
+[W 180912 17:13:49 web:2106] 404 GET /api/piccode?pre=e15c2305-7292-4c8e-824a-7f2dbc2ebfb8&cur=6245903c-ca54-4676-99f7-a2e384d9265f (127.0.0.1) 3.36ms
+[W 180912 17:13:50 web:2106] 404 GET /api/piccode?pre=6245903c-ca54-4676-99f7-a2e384d9265f&cur=e31e6dbe-94f7-44db-a460-e8e458dc0ed2 (127.0.0.1) 3.27ms
+[W 180912 17:13:50 web:2106] 404 GET /api/piccode?pre=e31e6dbe-94f7-44db-a460-e8e458dc0ed2&cur=070c8e67-12fa-445c-9daa-98bfbfc20aff (127.0.0.1) 3.56ms
+[W 180912 17:13:50 web:2106] 404 GET /api/piccode?pre=070c8e67-12fa-445c-9daa-98bfbfc20aff&cur=06bd421c-fd94-4a6d-aecc-927a66e6b4b3 (127.0.0.1) 4.09ms
+[I 180912 17:14:21 web:2106] 304 GET /register.html (127.0.0.1) 2.52ms
+[W 180912 17:14:21 web:2106] 404 GET /api/piccode?pre=&cur=edb22072-969d-480d-9823-3a7d274f7633 (127.0.0.1) 1.75ms
+[W 180912 17:14:59 web:2106] 404 GET /api/piccode?pre=&cur=d7e359dd-d004-40a8-917a-595ece1a1027 (127.0.0.1) 1.34ms
+[I 180912 17:15:29 web:2106] 200 GET /register.html (127.0.0.1) 2.53ms
+[I 180912 17:15:29 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 24.90ms
+[I 180912 17:15:29 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 21.84ms
+[I 180912 17:15:29 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 17.37ms
+[I 180912 17:15:29 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 14.12ms
+[I 180912 17:15:29 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 36.49ms
+[I 180912 17:15:29 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 10.62ms
+[I 180912 17:15:29 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 9.46ms
+[I 180912 17:15:29 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.41ms
+[I 180912 17:15:29 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 17.09ms
+[I 180912 17:15:29 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 7.69ms
+[E 180912 17:15:30 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:30 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:30 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=9c6fdff4-7a75-4713-ae94-b05bc8eb5eaa (127.0.0.1) 20.44ms
+[I 180912 17:15:30 web:2106] 200 GET /favicon.ico (127.0.0.1) 5.22ms
+[E 180912 17:15:33 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:33 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:33 web:2106] 200 GET /api/imagecode?codeid=9c6fdff4-7a75-4713-ae94-b05bc8eb5eaa&pcodeid=b1de886c-ed1c-4033-931b-1f06409d3729 (127.0.0.1) 15.97ms
+[E 180912 17:15:33 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:33 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:33 web:2106] 200 GET /api/imagecode?codeid=b1de886c-ed1c-4033-931b-1f06409d3729&pcodeid=0f2072b5-d74c-4c4e-aa87-8fc3a2be0d43 (127.0.0.1) 14.93ms
+[I 180912 17:15:38 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 23.08ms
+[E 180912 17:15:41 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:41 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:41 web:2106] 200 GET /api/imagecode?codeid=0f2072b5-d74c-4c4e-aa87-8fc3a2be0d43&pcodeid=55b1b494-48cb-4a91-a77b-d79565aacb72 (127.0.0.1) 16.71ms
+[E 180912 17:15:45 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:45 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:45 web:2106] 200 GET /api/imagecode?codeid=55b1b494-48cb-4a91-a77b-d79565aacb72&pcodeid=73d11dab-ae66-4da7-a2af-482bc4ab0155 (127.0.0.1) 15.51ms
+[E 180912 17:15:55 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:55 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:55 web:2106] 200 GET /api/imagecode?codeid=73d11dab-ae66-4da7-a2af-482bc4ab0155&pcodeid=dcaae249-665b-4026-a7b4-90911ee15ccd (127.0.0.1) 17.44ms
+[E 180912 17:15:56 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:15:56 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:15:56 web:2106] 200 GET /api/imagecode?codeid=dcaae249-665b-4026-a7b4-90911ee15ccd&pcodeid=76a2048b-5e19-458e-a564-97f4e3a3c842 (127.0.0.1) 15.62ms
+[I 180912 17:18:14 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180912 17:19:01 web:2106] 304 GET /register.html (127.0.0.1) 17.93ms
+[I 180912 17:19:02 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 9.64ms
+[E 180912 17:19:02 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:19:02 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:19:02 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=b783b7a0-e97b-41cf-a02b-0b8243c1712d (127.0.0.1) 121.26ms
+[I 180912 17:21:56 autoreload:196] /Users/cui/PycharmProjects/tornado/config.py modified; restarting server
+[I 180912 17:22:05 web:2106] 304 GET /register.html (127.0.0.1) 18.25ms
+[I 180912 17:22:05 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.84ms
+[E 180912 17:22:05 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:22:05 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:22:05 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=cdc89cef-afa1-4ae3-b3f4-546cc012caf7 (127.0.0.1) 107.84ms
+[E 180912 17:22:35 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:22:35 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:22:35 web:2106] 200 GET /api/imagecode?codeid=cdc89cef-afa1-4ae3-b3f4-546cc012caf7&pcodeid=31fa69db-253d-4144-9205-005e4a143ab6 (127.0.0.1) 14.84ms
+[I 180912 17:23:33 web:2106] 304 GET /register.html (127.0.0.1) 12.15ms
+[E 180912 17:23:33 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:23:33 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:23:33 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=843d3856-9b1d-4f72-a7f2-08ffaacd19f1 (127.0.0.1) 51.15ms
+[E 180912 17:23:40 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:23:40 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:23:40 web:2106] 200 GET /api/imagecode?codeid=843d3856-9b1d-4f72-a7f2-08ffaacd19f1&pcodeid=3dbee0d2-e2a6-445d-8fac-f71e0577a598 (127.0.0.1) 13.99ms
+[E 180912 17:23:42 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:23:42 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:23:42 web:2106] 200 GET /api/imagecode?codeid=3dbee0d2-e2a6-445d-8fac-f71e0577a598&pcodeid=7f13c62c-f187-48b2-8e89-c73dc72ddf7e (127.0.0.1) 20.18ms
+[E 180912 17:23:43 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:23:43 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:23:43 web:2106] 200 GET /api/imagecode?codeid=7f13c62c-f187-48b2-8e89-c73dc72ddf7e&pcodeid=5019efca-bbc9-4caa-b37d-e1f86097c8fe (127.0.0.1) 17.25ms
+[E 180912 17:31:18 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:31:18 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:31:18 web:2106] 200 GET /api/imagecode?codeid=5019efca-bbc9-4caa-b37d-e1f86097c8fe&pcodeid=7033c6cb-e0a7-476f-a83e-c6a8d18e79b5 (127.0.0.1) 22.27ms
+[I 180912 17:34:00 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180912 17:36:46 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180912 17:47:36 autoreload:196] server.py modified; restarting server
+[I 180912 17:47:54 autoreload:196] server.py modified; restarting server
+[I 180912 17:58:20 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180912 17:58:26 web:2106] 304 GET /register.html (127.0.0.1) 17.25ms
+[I 180912 17:58:26 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.88ms
+[E 180912 17:58:26 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:58:27 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:58:27 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=661b1731-1298-4fa2-a682-acbdfed83193 (127.0.0.1) 93.46ms
+[I 180912 17:58:33 web:2106] 304 GET /register.html (127.0.0.1) 4.12ms
+[E 180912 17:58:33 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 17:58:33 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 17:58:33 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=4e4b6208-3c36-43a0-aa7f-5b9e8225d758 (127.0.0.1) 17.51ms
+[I 180912 18:00:15 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180912 18:00:21 web:2106] 304 GET /register.html (127.0.0.1) 13.20ms
+[E 180912 18:00:21 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 18:00:21 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 18:00:21 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=187f6d87-5d80-4adf-9090-b9b320b16c24 (127.0.0.1) 120.10ms
+[I 180912 18:01:48 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/BaseHandler.py modified; restarting server
+[I 180912 18:13:12 web:2106] 304 GET /register.html (127.0.0.1) 17.04ms
+[I 180912 18:13:12 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.53ms
+[E 180912 18:13:12 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 18:13:13 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 18:13:13 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=3303ce14-24f4-4600-b770-72c5231f0774 (127.0.0.1) 91.82ms
+[E 180912 18:13:18 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 18:13:18 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 18:13:18 web:2106] 200 GET /api/imagecode?codeid=3303ce14-24f4-4600-b770-72c5231f0774&pcodeid=1caac480-7e61-43aa-88bf-10377f4abae9 (127.0.0.1) 20.19ms
+[E 180912 18:13:19 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 18:13:19 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 18:13:19 web:2106] 200 GET /api/imagecode?codeid=1caac480-7e61-43aa-88bf-10377f4abae9&pcodeid=14a3446a-7207-426a-a9e3-9b7df9236739 (127.0.0.1) 16.03ms
+[E 180912 18:13:20 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180912 18:13:20 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180912 18:13:20 web:2106] 200 GET /api/imagecode?codeid=14a3446a-7207-426a-a9e3-9b7df9236739&pcodeid=87e965d6-7022-4384-80af-6b3abc0b74cc (127.0.0.1) 13.86ms
+[I 180913 14:41:17 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 12.65ms
+[E 180913 14:41:17 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 14:41:18 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 14:41:18 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=49606fe5-efc9-4810-83fa-6dc63dd76329 (127.0.0.1) 85.29ms
+[E 180913 14:41:19 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 14:41:19 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 14:41:19 web:2106] 200 GET /api/imagecode?codeid=49606fe5-efc9-4810-83fa-6dc63dd76329&pcodeid=956211c1-cb6c-4761-aa1f-e70a5af4e718 (127.0.0.1) 19.56ms
+[E 180913 14:41:54 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 14:41:54 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 14:41:54 web:2106] 200 GET /api/imagecode?codeid=956211c1-cb6c-4761-aa1f-e70a5af4e718&pcodeid=010c338a-5ca8-4f9f-97dc-b01c47b2f95d (127.0.0.1) 15.05ms
+[E 180913 14:42:54 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 14:42:54 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 14:42:54 web:2106] 200 GET /api/imagecode?codeid=010c338a-5ca8-4f9f-97dc-b01c47b2f95d&pcodeid=c11148d9-93de-4e90-8c70-516b86f455cb (127.0.0.1) 24.92ms
+[E 180913 14:43:06 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 14:43:06 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 14:43:06 web:2106] 200 GET /api/imagecode?codeid=010c338a-5ca8-4f9f-97dc-b01c47b2f95d&pcodeid=c11148d9-93de-4e90-8c70-516b86f455cb (127.0.0.1) 16.26ms
+[E 180913 15:34:15 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 15:34:15 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 15:34:15 web:2106] 200 GET /api/imagecode?codeid=c11148d9-93de-4e90-8c70-516b86f455cb&pcodeid=b7d5732a-05de-4ec7-a9b5-a9bfd5db233d (127.0.0.1) 12.52ms
+[E 180913 15:35:53 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 15:35:53 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 15:35:53 web:2106] 200 GET /api/imagecode?codeid=b7d5732a-05de-4ec7-a9b5-a9bfd5db233d&pcodeid=7f614e77-6c7b-4408-b6b7-efc82d62b6d4 (127.0.0.1) 16.49ms
+[I 180913 16:16:28 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/BaseHandler.py modified; restarting server
+[I 180913 16:24:21 autoreload:196] server.py modified; restarting server
+[E 180913 16:24:26 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 16:24:26 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 16:24:26 web:2106] 200 GET /api/imagecode?codeid=7f614e77-6c7b-4408-b6b7-efc82d62b6d4&pcodeid=891438c6-0025-4810-a483-8148f5fb0164 (127.0.0.1) 61.19ms
+[E 180913 16:24:35 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 16:24:35 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 16:24:35 web:2106] 200 GET /api/imagecode?codeid=891438c6-0025-4810-a483-8148f5fb0164&pcodeid=5476304c-4d68-46df-84a1-e0a8015aca38 (127.0.0.1) 19.28ms
+[E 180913 16:24:55 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 16:24:55 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 16:24:55 web:2106] 200 GET /api/imagecode?codeid=5476304c-4d68-46df-84a1-e0a8015aca38&pcodeid=c6772369-a3c3-454e-b121-65dceaac65d1 (127.0.0.1) 81.78ms
+[E 180913 16:25:01 VerifyCode:18] 'Application' object has no attribute 'redis'
+[E 180913 16:25:01 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 180913 16:25:01 web:2106] 200 GET /api/imagecode?codeid=c6772369-a3c3-454e-b121-65dceaac65d1&pcodeid=a9513b14-dd01-4a25-b93f-bf90040b2d73 (127.0.0.1) 21.70ms
+[I 180913 16:33:57 autoreload:196] server.py modified; restarting server
+[E 180913 17:11:41 torndb:103] Cannot connect to MySQL on 192.168.2.4
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1049, "Unknown database 'root'")
+[I 180913 17:11:46 web:2106] 200 GET /api/imagecode?codeid=b5804e48-0518-4502-aba3-3f54c76ccb56&pcodeid=5d5dfa2b-c2ff-4058-b61a-f03dc2b757a5 (127.0.0.1) 71.24ms
+[I 180913 17:11:47 web:2106] 200 GET /api/imagecode?codeid=5d5dfa2b-c2ff-4058-b61a-f03dc2b757a5&pcodeid=fed4f95e-b487-432c-9eec-8b0276ff6543 (127.0.0.1) 20.91ms
+[I 180913 17:12:01 web:2106] 200 GET /api/imagecode?codeid=fed4f95e-b487-432c-9eec-8b0276ff6543&pcodeid=ec99fe62-4109-4346-ad22-8e5256ecf859 (127.0.0.1) 29.87ms
+[I 180913 17:12:02 web:2106] 200 GET /api/imagecode?codeid=ec99fe62-4109-4346-ad22-8e5256ecf859&pcodeid=72f123ac-91d5-40cc-b5c4-327f4faa1d3c (127.0.0.1) 19.85ms
+[I 180913 17:15:11 autoreload:196] server.py modified; restarting server
+[E 180913 17:15:11 torndb:103] Cannot connect to MySQL on 192.168.2.4
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1049, "Unknown database 'root'")
+[E 180913 17:19:00 torndb:103] Cannot connect to MySQL on 192.168.2.4
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1049, "Unknown database 'root'")
+[I 180913 17:19:13 autoreload:196] /Users/cui/PycharmProjects/tornado/config.py modified; restarting server
+[I 180913 17:20:57 web:2106] 304 GET /register.html (127.0.0.1) 17.00ms
+[I 180913 17:20:57 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.05ms
+[I 180913 17:20:57 web:2106] 200 GET /api/imagecode?codeid=&pcodeid=6471d662-e642-4f33-af69-b104120634ef (127.0.0.1) 85.48ms
+[I 180913 17:22:08 web:2106] 200 GET /api/imagecode?codeid=6471d662-e642-4f33-af69-b104120634ef&pcodeid=0921c9a9-6718-4669-9d4f-6d1a965288b5 (127.0.0.1) 20.73ms
+[I 180913 17:23:02 web:2106] 200 GET /api/imagecode?codeid=0921c9a9-6718-4669-9d4f-6d1a965288b5&pcodeid=a10d496d-0139-44cc-a614-a4cbe7f13c77 (127.0.0.1) 31.56ms
+[I 180913 17:23:37 web:2106] 200 GET /api/imagecode?codeid=a10d496d-0139-44cc-a614-a4cbe7f13c77&pcodeid=5366f4ae-d555-4d61-a266-42aa63accfd1 (127.0.0.1) 18.78ms
+[I 180913 17:24:22 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180913 17:24:27 web:2106] 200 GET /api/imagecode?codeid=5366f4ae-d555-4d61-a266-42aa63accfd1&pcodeid=9f5abe05-df16-43a5-927b-f91bb1aa1706 (127.0.0.1) 64.41ms
+[I 180913 17:24:31 web:2106] 200 GET /api/imagecode?codeid=9f5abe05-df16-43a5-927b-f91bb1aa1706&pcodeid=72118350-e0f9-4b31-a0ac-f577a6d66a66 (127.0.0.1) 16.09ms
+[I 180913 17:24:32 web:2106] 200 GET /api/imagecode?codeid=72118350-e0f9-4b31-a0ac-f577a6d66a66&pcodeid=bf4d8d3a-b432-4dcc-80d9-c9473b1f3f50 (127.0.0.1) 17.24ms
+[I 180913 17:28:27 web:2106] 200 GET /api/imagecode?codeid=bf4d8d3a-b432-4dcc-80d9-c9473b1f3f50&pcodeid=e9fb6daf-bc9e-4182-9ce3-e44f4c7d7d88 (127.0.0.1) 27.09ms
+[I 180913 17:29:08 web:2106] 200 GET /api/imagecode?codeid=e9fb6daf-bc9e-4182-9ce3-e44f4c7d7d88&pcodeid=ba2b3bc4-cda4-487d-9762-4087fa4c54d5 (127.0.0.1) 22.19ms
+[I 180913 17:42:30 web:2106] 200 GET / (127.0.0.1) 21.72ms
+[I 180913 17:42:30 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 23.07ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 19.72ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 16.28ms
+[I 180913 17:42:30 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 11.96ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 34.67ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 10.83ms
+[I 180913 17:42:30 web:2106] 200 GET /static/css/ihome/index.css (127.0.0.1) 14.56ms
+[I 180913 17:42:30 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 5.75ms
+[I 180913 17:42:30 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 13.23ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 19.72ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 17.94ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 27.84ms
+[I 180913 17:42:30 web:2106] 200 GET /static/js/ihome/index.js (127.0.0.1) 11.44ms
+[I 180913 17:42:30 web:2106] 200 GET /static/js/template.js (127.0.0.1) 8.36ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 5.15ms
+[I 180913 17:42:30 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 27.51ms
+[W 180913 17:42:31 web:2106] 404 GET /api/check_login (127.0.0.1) 3.92ms
+[W 180913 17:42:31 web:2106] 404 GET /api/house/index (127.0.0.1) 0.95ms
+[I 180913 17:42:31 web:2106] 200 GET /favicon.ico (127.0.0.1) 3.11ms
+[I 180913 17:42:36 web:2106] 304 GET / (127.0.0.1) 0.78ms
+[W 180913 17:42:36 web:2106] 404 GET /api/check_login (127.0.0.1) 0.94ms
+[W 180913 17:42:36 web:2106] 404 GET /api/house/index (127.0.0.1) 1.25ms
+[I 180913 17:42:45 web:2106] 200 GET /register.html (127.0.0.1) 2.53ms
+[I 180913 17:42:45 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 5.96ms
+[I 180913 17:42:45 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.51ms
+[I 180913 17:42:45 web:2106] 200 GET /api/imagecode?codeid=8dc083d9-59de-4e72-87da-991f16a0f331&pcodeid= (127.0.0.1) 28.39ms
+[I 180913 17:42:52 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 25.55ms
+[I 180913 17:43:03 web:2106] 200 GET /api/imagecode?codeid=d334b105-6d0b-4d8c-a7cd-893cdecc5c68&pcodeid=8dc083d9-59de-4e72-87da-991f16a0f331 (127.0.0.1) 26.97ms
+[I 180913 17:43:07 web:2106] 200 GET /api/imagecode?codeid=b832b0d1-43db-4d88-a941-9a2284fe30c9&pcodeid=d334b105-6d0b-4d8c-a7cd-893cdecc5c68 (127.0.0.1) 16.40ms
+[I 180913 17:43:44 web:2106] 200 GET /api/imagecode?codeid=85510b07-92be-4ce9-895e-33d5dd745168&pcodeid=b832b0d1-43db-4d88-a941-9a2284fe30c9 (127.0.0.1) 22.21ms
+[I 180913 17:46:04 web:2106] 200 GET /api/imagecode?codeid=b3230522-f02d-42f1-8e81-f6e5e0bcf037&pcodeid=85510b07-92be-4ce9-895e-33d5dd745168 (127.0.0.1) 20.92ms
+[I 180913 17:46:05 web:2106] 200 GET /api/imagecode?codeid=b1b9e987-daa4-42f4-97cc-8aac3fdf3a68&pcodeid=b3230522-f02d-42f1-8e81-f6e5e0bcf037 (127.0.0.1) 19.07ms
+[W 180913 19:34:47 web:2106] 404 GET /regisrer.html (127.0.0.1) 8.75ms
+[I 180913 19:35:02 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 14.84ms
+[I 180913 19:35:02 web:2106] 200 GET /api/imagecode?codeid=131484f6-5457-494c-bbb5-ce0d142f33a0&pcodeid= (127.0.0.1) 76.33ms
+[I 180914 12:17:49 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/BaseHandler.py modified; restarting server
+[I 180914 12:21:21 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180914 12:25:44 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180914 12:26:06 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180914 12:29:58 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[W 180914 16:03:31 web:2106] 404 GET /api/check_login (127.0.0.1) 16.50ms
+[W 180914 16:03:31 web:2106] 404 GET /api/house/index (127.0.0.1) 1.40ms
+[I 180914 16:03:38 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 21.67ms
+[I 180914 16:03:38 web:2106] 200 GET /api/imagecode?codeid=b8d9ddd3-cc23-43fa-8ad8-761e90c8be65&pcodeid= (127.0.0.1) 92.98ms
+[I 180914 16:04:00 web:2106] 200 GET /api/imagecode?codeid=1465a35a-67d8-4d95-bfbf-310326a19e5f&pcodeid=b8d9ddd3-cc23-43fa-8ad8-761e90c8be65 (127.0.0.1) 20.41ms
+[I 180914 16:04:04 web:2106] 200 GET /api/imagecode?codeid=6d04f264-d556-4a15-b6d9-4939b277d54f&pcodeid=1465a35a-67d8-4d95-bfbf-310326a19e5f (127.0.0.1) 20.84ms
+[I 180914 16:04:09 web:2106] 200 GET /api/imagecode?codeid=c4ad8c40-30a2-4744-9f00-1ea528894724&pcodeid=6d04f264-d556-4a15-b6d9-4939b277d54f (127.0.0.1) 18.53ms
+[I 180914 16:04:12 web:2106] 200 GET /api/imagecode?codeid=3d66ceea-8e2c-46cc-a568-339c6e71bb84&pcodeid=c4ad8c40-30a2-4744-9f00-1ea528894724 (127.0.0.1) 21.08ms
+[I 180914 16:04:18 web:2106] 200 GET /api/imagecode?codeid=df855c39-6ea0-4e05-8084-299b58fd9955&pcodeid=3d66ceea-8e2c-46cc-a568-339c6e71bb84 (127.0.0.1) 17.98ms
+[I 180914 16:04:20 web:2106] 200 GET /api/imagecode?codeid=aa022ab8-054d-4ffd-ba1b-41cd41c8815f&pcodeid=df855c39-6ea0-4e05-8084-299b58fd9955 (127.0.0.1) 20.61ms
+[I 180914 16:04:21 web:2106] 200 GET /api/imagecode?codeid=528bad63-d6c8-471a-9906-5650fcf904d9&pcodeid=aa022ab8-054d-4ffd-ba1b-41cd41c8815f (127.0.0.1) 20.42ms
+[I 180914 16:04:22 web:2106] 200 GET /api/imagecode?codeid=db89d36e-754e-42b0-9e5d-d9e3c01c080a&pcodeid=528bad63-d6c8-471a-9906-5650fcf904d9 (127.0.0.1) 20.09ms
+[I 180914 16:04:23 web:2106] 200 GET /api/imagecode?codeid=7d074b1d-9883-4279-a724-08f6d70e2e30&pcodeid=db89d36e-754e-42b0-9e5d-d9e3c01c080a (127.0.0.1) 19.91ms
+[I 180914 16:04:23 web:2106] 200 GET /api/imagecode?codeid=e22aeacb-b168-4caa-9b42-fa311da6a8bf&pcodeid=7d074b1d-9883-4279-a724-08f6d70e2e30 (127.0.0.1) 21.20ms
+[I 180914 16:04:24 web:2106] 200 GET /api/imagecode?codeid=65a1ca94-37b1-44e9-b3bc-494451f62205&pcodeid=e22aeacb-b168-4caa-9b42-fa311da6a8bf (127.0.0.1) 19.90ms
+[W 180921 13:46:20 web:2106] 404 GET /api/check_login (127.0.0.1) 11.68ms
+[W 180921 13:46:20 web:2106] 404 GET /api/house/index (127.0.0.1) 1.24ms
+[I 180921 13:46:20 web:2106] 200 GET /favicon.ico (127.0.0.1) 26.25ms
+[I 180921 13:46:25 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.01ms
+[I 180921 13:46:25 web:2106] 200 GET /api/imagecode?codeid=f6ae863e-6bfb-406e-a5ff-9e4154ac51ca&pcodeid= (127.0.0.1) 82.26ms
+[I 180921 13:46:36 web:2106] 200 GET /api/imagecode?codeid=4a155280-15ba-46b5-9d5b-16ffdbd25db2&pcodeid=f6ae863e-6bfb-406e-a5ff-9e4154ac51ca (127.0.0.1) 15.41ms
+[I 180921 13:46:42 web:2106] 200 POST /api/smscode (127.0.0.1) 2.47ms
+[I 180921 13:46:43 web:2106] 200 GET /api/imagecode?codeid=b3c76cd3-69fd-449f-926f-99c05267661b&pcodeid=4a155280-15ba-46b5-9d5b-16ffdbd25db2 (127.0.0.1) 17.25ms
+[I 180921 13:46:49 web:2106] 200 POST /api/smscode (127.0.0.1) 1.46ms
+[I 180921 13:46:52 web:2106] 200 GET /api/imagecode?codeid=de1a8893-5e51-4a20-834a-3228c900c00d&pcodeid=b3c76cd3-69fd-449f-926f-99c05267661b (127.0.0.1) 17.97ms
+[I 180921 13:46:59 web:2106] 200 POST /api/smscode (127.0.0.1) 1.29ms
+[I 180921 13:47:00 web:2106] 200 GET /api/imagecode?codeid=b311172d-4572-4987-a35d-59018935e50d&pcodeid=de1a8893-5e51-4a20-834a-3228c900c00d (127.0.0.1) 17.58ms
+[I 180921 13:47:02 web:2106] 200 GET /api/imagecode?codeid=0d7711d7-1d2b-4326-8ae9-52265844bc3a&pcodeid=b311172d-4572-4987-a35d-59018935e50d (127.0.0.1) 17.47ms
+[I 180921 13:47:04 web:2106] 200 GET /api/imagecode?codeid=4b2e754e-d1db-421e-a70b-8212871064d7&pcodeid=0d7711d7-1d2b-4326-8ae9-52265844bc3a (127.0.0.1) 14.91ms
+[I 180921 13:47:05 web:2106] 200 GET /api/imagecode?codeid=f269eba0-80f2-4469-80f5-d10a074a37da&pcodeid=4b2e754e-d1db-421e-a70b-8212871064d7 (127.0.0.1) 17.80ms
+[I 180921 13:47:07 web:2106] 200 GET /api/imagecode?codeid=da33349a-f945-4838-bea0-9e62c515d89f&pcodeid=f269eba0-80f2-4469-80f5-d10a074a37da (127.0.0.1) 19.15ms
+[I 180921 13:47:14 web:2106] 200 POST /api/smscode (127.0.0.1) 0.75ms
+[I 180921 13:49:53 web:2106] 200 POST /api/smscode (127.0.0.1) 0.76ms
+[I 180921 13:49:54 web:2106] 200 POST /api/smscode (127.0.0.1) 0.65ms
+[I 180921 13:50:04 web:2106] 200 POST /api/smscode (127.0.0.1) 1.18ms
+[I 180921 13:58:43 web:2106] 304 GET /register.html (127.0.0.1) 3.01ms
+[I 180921 13:58:43 web:2106] 200 GET /api/imagecode?codeid=56f51e4a-fc2d-4576-b640-7e5fcf6df428&pcodeid= (127.0.0.1) 20.33ms
+[I 180921 13:59:01 web:2106] 200 POST /api/smscode (127.0.0.1) 1.33ms
+[I 180921 14:00:09 web:2106] 200 GET /register.html (127.0.0.1) 4.56ms
+[I 180921 14:00:09 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 23.67ms
+[I 180921 14:00:09 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 19.35ms
+[I 180921 14:00:09 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 15.90ms
+[I 180921 14:00:09 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 11.57ms
+[I 180921 14:00:09 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 37.44ms
+[I 180921 14:00:09 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 8.91ms
+[I 180921 14:00:09 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 6.91ms
+[I 180921 14:00:09 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.96ms
+[I 180921 14:00:09 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.62ms
+[I 180921 14:00:09 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 4.57ms
+[I 180921 14:00:09 web:2106] 200 GET /api/imagecode?codeid=1ffc9c6a-418d-4a3e-a34d-5ed7fa7ea0d6&pcodeid= (127.0.0.1) 19.48ms
+[I 180921 14:00:10 web:2106] 200 GET /favicon.ico (127.0.0.1) 2.30ms
+[I 180921 14:00:13 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 16.59ms
+[I 180921 14:00:45 web:2106] 200 GET /api/imagecode?codeid=6025edeb-c56d-4c8c-a0bb-ae6ddaca37d1&pcodeid=1ffc9c6a-418d-4a3e-a34d-5ed7fa7ea0d6 (127.0.0.1) 18.81ms
+[I 180921 14:00:51 VerifyCode:62]  952
+[E 180921 14:00:51 web:1621] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 72, in post
+        self.write(dict(errno=RET.ok,errmsg="ok"))
+    AttributeError: class RET has no attribute 'ok'
+[E 180921 14:00:51 web:2106] 500 POST /api/smscode (127.0.0.1) 9.94ms
+[I 180921 14:02:24 web:2106] 304 GET /register.html (127.0.0.1) 1.57ms
+[I 180921 14:02:25 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.63ms
+[I 180921 14:02:25 web:2106] 200 GET /api/imagecode?codeid=6612a44d-3663-493c-91c3-b6b650a68fa2&pcodeid= (127.0.0.1) 18.92ms
+[I 180921 14:02:36 web:2106] 200 GET /api/imagecode?codeid=077bdba2-e47d-4c4f-9857-ac936c4ba2f2&pcodeid=6612a44d-3663-493c-91c3-b6b650a68fa2 (127.0.0.1) 19.17ms
+[I 180921 14:02:41 VerifyCode:62]  656
+[E 180921 14:02:41 web:1621] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py", line 72, in post
+        self.write(dict(errno=RET.ok,errmsg="ok"))
+    AttributeError: class RET has no attribute 'ok'
+[E 180921 14:02:41 web:2106] 500 POST /api/smscode (127.0.0.1) 9.83ms
+[I 180921 14:03:46 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 180921 14:03:51 web:2106] 304 GET /register.html (127.0.0.1) 29.95ms
+[I 180921 14:03:51 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.89ms
+[I 180921 14:03:51 web:2106] 200 GET /api/imagecode?codeid=d9780420-e0b4-4bd4-951b-6e823103c2a0&pcodeid= (127.0.0.1) 68.96ms
+[I 180921 14:03:59 web:2106] 200 GET /api/imagecode?codeid=0e0a778c-b81d-46ad-9dda-e2cc6048c9d7&pcodeid=d9780420-e0b4-4bd4-951b-6e823103c2a0 (127.0.0.1) 20.93ms
+[I 180921 14:04:03 VerifyCode:62]  925
+[I 180921 14:04:03 web:2106] 200 POST /api/smscode (127.0.0.1) 8.61ms
+[I 180921 14:04:06 VerifyCode:62]  750
+[I 180921 14:04:06 web:2106] 200 POST /api/smscode (127.0.0.1) 9.48ms
+[I 180921 14:04:21 VerifyCode:62]  185
+[I 180921 14:04:21 web:2106] 200 POST /api/smscode (127.0.0.1) 11.74ms
+[I 180921 14:04:24 web:2106] 200 GET /api/imagecode?codeid=eb8aec69-4c02-4bb6-875c-2ed81320a43a&pcodeid=0e0a778c-b81d-46ad-9dda-e2cc6048c9d7 (127.0.0.1) 18.78ms
+[I 180921 14:04:33 VerifyCode:62]  741
+[I 180921 14:04:33 web:2106] 200 POST /api/smscode (127.0.0.1) 8.73ms
+[I 180921 14:08:22 web:2106] 200 GET /register.html (127.0.0.1) 2.79ms
+[I 180921 14:08:22 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 13.14ms
+[I 180921 14:08:22 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 11.35ms
+[I 180921 14:08:22 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 9.91ms
+[I 180921 14:08:22 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 7.53ms
+[I 180921 14:08:22 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 21.64ms
+[I 180921 14:08:22 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 7.41ms
+[I 180921 14:08:22 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 6.23ms
+[I 180921 14:08:22 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 8.39ms
+[I 180921 14:08:22 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 6.83ms
+[I 180921 14:08:22 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 3.24ms
+[I 180921 14:08:22 web:2106] 200 GET /api/imagecode?codeid=c1ad9d90-8bbc-4910-a804-c2335ba10a52&pcodeid= (127.0.0.1) 21.58ms
+[I 180921 14:08:22 web:2106] 200 GET /favicon.ico (127.0.0.1) 3.74ms
+[I 180921 14:08:32 VerifyCode:62]  564
+[I 180921 14:08:32 web:2106] 200 POST /api/smscode (127.0.0.1) 6.70ms
+[I 180921 14:08:38 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 15.05ms
+[I 180921 14:23:29 web:2106] 200 GET /register.html (127.0.0.1) 2.39ms
+[I 180921 14:23:29 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 12.80ms
+[I 180921 14:23:29 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 10.87ms
+[I 180921 14:23:29 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 9.36ms
+[I 180921 14:23:29 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 8.01ms
+[I 180921 14:23:29 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 22.52ms
+[I 180921 14:23:29 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.77ms
+[I 180921 14:23:29 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 7.00ms
+[I 180921 14:23:29 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.00ms
+[I 180921 14:23:29 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.31ms
+[I 180921 14:23:29 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 3.10ms
+[I 180921 14:23:30 web:2106] 200 GET /api/imagecode?codeid=2f2651fb-6873-4ac3-a2b2-c468ff5903d0&pcodeid= (127.0.0.1) 22.13ms
+[I 180921 14:23:30 web:2106] 200 GET /favicon.ico (127.0.0.1) 1.99ms
+[I 180921 14:23:41 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 13.15ms
+[I 180921 14:25:41 web:2106] 200 GET /api/imagecode?codeid=4d9d50e3-8229-4c1d-ace5-87eacb7a0a28&pcodeid=2f2651fb-6873-4ac3-a2b2-c468ff5903d0 (127.0.0.1) 18.18ms
+[I 180921 14:25:48 VerifyCode:62]  200
+[I 180921 14:25:48 web:2106] 200 POST /api/smscode (127.0.0.1) 7.09ms
+[I 180921 14:43:54 web:2106] 200 POST /api/smscode (127.0.0.1) 4.27ms
+[I 180921 14:43:54 web:2106] 200 GET /api/imagecode?codeid=b49276f2-fa54-4cb7-b47a-70dda05d3e8a&pcodeid=4d9d50e3-8229-4c1d-ace5-87eacb7a0a28 (127.0.0.1) 24.83ms
+[I 180921 14:43:56 web:2106] 200 POST /api/smscode (127.0.0.1) 4.26ms
+[I 180921 14:43:57 web:2106] 200 GET /api/imagecode?codeid=d29cae68-e78d-4ca2-8a8a-6b01b92528c3&pcodeid=b49276f2-fa54-4cb7-b47a-70dda05d3e8a (127.0.0.1) 16.93ms
+[I 180921 14:44:03 web:2106] 200 POST /api/smscode (127.0.0.1) 6.01ms
+[I 180921 14:44:06 web:2106] 200 GET /api/imagecode?codeid=3ac8e820-74a5-4db5-8c52-eb08658d9a2c&pcodeid=d29cae68-e78d-4ca2-8a8a-6b01b92528c3 (127.0.0.1) 16.94ms
+[I 180921 14:44:12 web:2106] 200 GET /api/imagecode?codeid=9926a9e5-8138-424e-bd08-c022d6b793e8&pcodeid=3ac8e820-74a5-4db5-8c52-eb08658d9a2c (127.0.0.1) 15.09ms
+[I 180921 14:44:16 web:2106] 200 GET /api/imagecode?codeid=846d9b2d-6354-4fb2-98de-ed032e34f739&pcodeid=9926a9e5-8138-424e-bd08-c022d6b793e8 (127.0.0.1) 26.94ms
+[I 180921 14:44:22 VerifyCode:62]  408
+[I 180921 14:44:22 web:2106] 200 POST /api/smscode (127.0.0.1) 8.27ms
+[W 180921 14:45:22 web:2106] 405 POST /api/register (127.0.0.1) 4.96ms
+[W 180921 14:45:25 web:2106] 405 POST /api/register (127.0.0.1) 1.61ms
+[W 180921 14:50:11 web:2106] 405 POST /api/register (127.0.0.1) 1.07ms
+[I 180921 15:21:41 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 180921 15:24:09 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
