@@ -3,6 +3,7 @@
 import logging
 import constants
 import random
+import re
 
 from .BaseHandler import BaseHandler
 from utils.captcha.captcha import captcha
@@ -42,6 +43,8 @@ class  SMSCodeHandler(BaseHandler):
         image_code_text = self.json_args.get("image_code_text")
         if not all((mobile,image_code_id,image_code_text)):
             return self.write(dict(error=RET.PARAMERR,errmsg="参数错误"))
+        if not re.match(r"1\d{10}",mobile):
+            return self.write(dict(errno=RET.PARAMERR,errmsg="手机号错误"))
         #判断图片验证码
         try:
             real_image_code_text=self.redis.get('image_code_%s' % image_code_id)

@@ -620,3 +620,92 @@
 [W 180921 14:50:11 web:2106] 405 POST /api/register (127.0.0.1) 1.07ms
 [I 180921 15:21:41 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
 [I 180921 15:24:09 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[E 181115 18:13:54 torndb:103] Cannot connect to MySQL on 192.168.2.4
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'192.168.0.27' (using password: YES)")
+[I 181115 18:14:21 web:2106] 200 GET / (127.0.0.1) 25.10ms
+[I 181115 18:14:21 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 25.60ms
+[I 181115 18:14:21 web:2106] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 20.38ms
+[I 181115 18:14:21 web:2106] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 16.83ms
+[I 181115 18:14:21 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 13.41ms
+[I 181115 18:14:21 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 36.72ms
+[I 181115 18:14:21 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 10.11ms
+[I 181115 18:14:21 web:2106] 200 GET /static/css/ihome/index.css (127.0.0.1) 14.16ms
+[I 181115 18:14:21 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 4.97ms
+[I 181115 18:14:22 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 13.32ms
+[I 181115 18:14:22 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 36.30ms
+[I 181115 18:14:22 web:2106] 200 GET /static/js/template.js (127.0.0.1) 18.97ms
+[I 181115 18:14:22 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 16.93ms
+[I 181115 18:14:22 web:2106] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 15.44ms
+[I 181115 18:14:22 web:2106] 200 GET /static/js/ihome/index.js (127.0.0.1) 13.31ms
+[I 181115 18:14:22 web:2106] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 11.25ms
+[I 181115 18:14:22 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 4.76ms
+[W 181115 18:14:22 web:2106] 404 GET /api/check_login (127.0.0.1) 7.11ms
+[W 181115 18:14:22 web:2106] 404 GET /api/house/index (127.0.0.1) 1.23ms
+[I 181115 18:14:22 web:2106] 200 GET /favicon.ico (127.0.0.1) 4.78ms
+[W 181115 18:14:31 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.70ms
+[I 181115 18:14:31 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 22.58ms
+[I 181115 18:15:18 web:2106] 200 GET /register.html (127.0.0.1) 3.52ms
+[I 181115 18:15:18 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 5.82ms
+[I 181115 18:15:18 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 9.81ms
+[E 181115 18:15:18 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:15:18 web:2106] 200 GET /api/imagecode?codeid=3a4313aa-85ec-4bd4-8d0d-6c858b9c17b0&pcodeid= (127.0.0.1) 93.62ms
+[I 181115 18:17:31 autoreload:196] /Users/cui/PycharmProjects/tornado/constants.py modified; restarting server
+[E 181115 18:17:32 torndb:103] Cannot connect to MySQL on 192.168.2.4
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'192.168.0.27' (using password: YES)")
+[E 181115 18:21:09 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181115 18:21:09 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:21:09 web:2106] 200 GET /api/imagecode?codeid=cce9fe98-53bd-413f-9dff-7be6ef6276d7&pcodeid=3a4313aa-85ec-4bd4-8d0d-6c858b9c17b0 (127.0.0.1) 242.36ms
+[E 181115 18:21:13 VerifyCode:52] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:21:13 web:2106] 200 POST /api/smscode (127.0.0.1) 8.89ms
+[E 181115 18:21:13 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181115 18:21:13 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:21:13 web:2106] 200 GET /api/imagecode?codeid=8ab2fd35-6671-4bc0-a8c5-c4adaa1ddb57&pcodeid=cce9fe98-53bd-413f-9dff-7be6ef6276d7 (127.0.0.1) 109.88ms
+[E 181115 18:21:24 VerifyCode:52] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:21:24 web:2106] 200 POST /api/smscode (127.0.0.1) 9.64ms
+[E 181115 18:21:24 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181115 18:21:24 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:21:24 web:2106] 200 GET /api/imagecode?codeid=c63657a4-ac1c-4fa6-b7bf-403f0dffdb9c&pcodeid=8ab2fd35-6671-4bc0-a8c5-c4adaa1ddb57 (127.0.0.1) 30.11ms
+[E 181115 18:22:10 VerifyCode:52] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:22:10 web:2106] 200 POST /api/smscode (127.0.0.1) 8.23ms
+[E 181115 18:22:10 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181115 18:22:10 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:22:10 web:2106] 200 GET /api/imagecode?codeid=2e098a43-0936-4dc5-b45e-4a50ad32f363&pcodeid=c63657a4-ac1c-4fa6-b7bf-403f0dffdb9c (127.0.0.1) 35.65ms
+[E 181115 18:22:22 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181115 18:22:22 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:22:22 web:2106] 200 GET /api/imagecode?codeid=238d4c57-1491-4681-9472-409abdf1e9c2&pcodeid=2e098a43-0936-4dc5-b45e-4a50ad32f363 (127.0.0.1) 85.47ms
+[E 181115 18:22:31 VerifyCode:52] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:22:31 web:2106] 200 POST /api/smscode (127.0.0.1) 11.29ms
+[E 181115 18:22:31 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181115 18:22:31 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181115 18:22:31 web:2106] 200 GET /api/imagecode?codeid=1a3fdbc6-32f9-4c20-81f1-9f3da6d418aa&pcodeid=238d4c57-1491-4681-9472-409abdf1e9c2 (127.0.0.1) 29.10ms
+[I 181115 18:25:28 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/BaseHandler.py modified; restarting server
+[E 181115 18:25:29 torndb:103] Cannot connect to MySQL on 192.168.2.4
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'192.168.0.27' (using password: YES)")
+[I 181115 18:27:19 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/BaseHandler.py modified; restarting server
