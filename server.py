@@ -6,7 +6,6 @@ from tornado.options import options, define
 from urls import handlers
 import config
 import redis
-
 import torndb
 
 define('port', default=8000, type=int, help='run server on the given port')

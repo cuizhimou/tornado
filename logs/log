@@ -709,3 +709,262 @@
         super(Connection, self).__init__(*args, **kwargs2)
     OperationalError: (1045, "Access denied for user 'root'@'192.168.0.27' (using password: YES)")
 [I 181115 18:27:19 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/BaseHandler.py modified; restarting server
+[I 181201 15:33:07 web:2106] 200 GET / (127.0.0.1) 19.50ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 29.04ms
+[I 181201 15:33:07 web:2106] 200 GET /static/css/reset.css (127.0.0.1) 20.72ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 16.81ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 13.17ms
+[I 181201 15:33:07 web:2106] 200 GET /static/css/ihome/main.css (127.0.0.1) 10.36ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 29.74ms
+[I 181201 15:33:07 web:2106] 200 GET /static/css/ihome/index.css (127.0.0.1) 15.27ms
+[I 181201 15:33:07 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 6.69ms
+[I 181201 15:33:07 web:2106] 200 GET /static/js/jquery.min.js (127.0.0.1) 13.73ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 17.09ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 12.47ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 5.00ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 11.92ms
+[I 181201 15:33:07 web:2106] 200 GET /static/js/template.js (127.0.0.1) 4.09ms
+[I 181201 15:33:07 web:2106] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.36ms
+[I 181201 15:33:07 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.64ms
+[W 181201 15:33:08 web:2106] 404 GET /api/check_login (127.0.0.1) 7.61ms
+[W 181201 15:33:08 web:2106] 404 GET /api/house/index (127.0.0.1) 1.24ms
+[I 181201 15:33:08 web:2106] 200 GET /favicon.ico (127.0.0.1) 3.23ms
+[W 181201 15:33:17 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.31ms
+[I 181201 15:33:17 web:2106] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 13.88ms
+[I 181201 15:33:46 web:2106] 200 GET /register.html (127.0.0.1) 4.28ms
+[I 181201 15:33:46 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 5.04ms
+[I 181201 15:33:46 web:2106] 200 GET /static/js/ihome/register.js (127.0.0.1) 5.06ms
+[E 181201 15:33:46 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:33:46 web:2106] 200 GET /api/imagecode?codeid=d2fd070d-e757-4540-8100-9a7c1cd7afcd&pcodeid= (127.0.0.1) 88.42ms
+[E 181201 15:33:51 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181201 15:33:51 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:33:51 web:2106] 200 GET /api/imagecode?codeid=1f6dadc9-15f4-45af-a3b0-07ebd4025e89&pcodeid=d2fd070d-e757-4540-8100-9a7c1cd7afcd (127.0.0.1) 24.89ms
+[E 181201 15:34:31 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181201 15:34:31 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:34:31 web:2106] 200 GET /api/imagecode?codeid=94a5d341-f619-45d4-a67c-e80520c2c429&pcodeid=1f6dadc9-15f4-45af-a3b0-07ebd4025e89 (127.0.0.1) 25.18ms
+[E 181201 15:34:41 VerifyCode:52] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:34:41 web:2106] 200 POST /api/smscode (127.0.0.1) 11.19ms
+[E 181201 15:34:41 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181201 15:34:41 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:34:41 web:2106] 200 GET /api/imagecode?codeid=e4d6e24a-f574-431d-ae87-0adc1f7cab91&pcodeid=94a5d341-f619-45d4-a67c-e80520c2c429 (127.0.0.1) 26.53ms
+[E 181201 15:38:18 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181201 15:38:18 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:38:18 web:2106] 200 GET /api/imagecode?codeid=e05606d3-1f27-48ce-b491-d01047da8dde&pcodeid=e4d6e24a-f574-431d-ae87-0adc1f7cab91 (127.0.0.1) 28.18ms
+[E 181201 15:38:27 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181201 15:38:28 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:38:28 web:2106] 200 GET /api/imagecode?codeid=fcd3aedd-8262-4722-b9e4-ca9d397691f8&pcodeid=e05606d3-1f27-48ce-b491-d01047da8dde (127.0.0.1) 24.16ms
+[E 181201 15:38:32 VerifyCode:22] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[E 181201 15:38:32 VerifyCode:31] Error 61 connecting to 192.168.2.4:6379. Connection refused.
+[I 181201 15:38:32 web:2106] 200 GET /api/imagecode?codeid=3a8e7f7d-de75-4f0a-9f50-e5be6d08570d&pcodeid=fcd3aedd-8262-4722-b9e4-ca9d397691f8 (127.0.0.1) 33.37ms
+[I 181201 15:40:45 web:2106] 200 GET /api/imagecode?codeid=38fb8933-b0e6-4375-b30d-b439b6af3d33&pcodeid=3a8e7f7d-de75-4f0a-9f50-e5be6d08570d (127.0.0.1) 19.61ms
+[I 181201 15:40:58 VerifyCode:65]  666
+[I 181201 15:40:58 web:2106] 200 POST /api/smscode (127.0.0.1) 9.50ms
+[W 181201 15:41:19 web:2106] 405 POST /api/register (127.0.0.1) 1.62ms
+[W 181201 15:42:02 web:2106] 405 POST /api/register (127.0.0.1) 1.31ms
+[I 181201 16:16:43 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181201 16:16:59 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181201 16:17:51 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181201 16:27:19 autoreload:196] /Users/cui/PycharmProjects/tornado/urls.py modified; restarting server
+[I 181201 17:01:05 web:2106] 200 POST /api/register (127.0.0.1) 10.70ms
+[I 181201 17:01:07 web:2106] 200 POST /api/smscode (127.0.0.1) 6.07ms
+[I 181201 17:01:07 web:2106] 200 GET /api/imagecode?codeid=5198cd74-d1e0-42bd-a073-7b1b1ed0bd3a&pcodeid=38fb8933-b0e6-4375-b30d-b439b6af3d33 (127.0.0.1) 90.09ms
+[I 181201 17:01:10 web:2106] 304 GET /register.html (127.0.0.1) 18.02ms
+[I 181201 17:01:10 web:2106] 200 GET /api/imagecode?codeid=0c0232ee-4e76-4da7-ba7c-e07cd622303b&pcodeid= (127.0.0.1) 18.80ms
+[I 181201 17:01:10 web:2106] 200 GET /favicon.ico (127.0.0.1) 3.25ms
+[I 181201 17:01:26 VerifyCode:65]  307
+[I 181201 17:01:26 web:2106] 200 POST /api/smscode (127.0.0.1) 9.51ms
+[I 181201 17:01:39 web:2106] 200 POST /api/register (127.0.0.1) 6.73ms
+[I 181201 17:01:48 web:2106] 200 POST /api/register (127.0.0.1) 5.30ms
+[I 181201 17:02:06 web:2106] 200 POST /api/register (127.0.0.1) 5.17ms
+[I 181201 17:18:31 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181201 17:20:17 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181201 17:21:04 web:2106] 200 POST /api/register (127.0.0.1) 9.26ms
+[I 181201 17:21:06 web:2106] 200 GET /api/imagecode?codeid=d9e71218-0834-4c19-9fcc-368b49dd3c6f&pcodeid=0c0232ee-4e76-4da7-ba7c-e07cd622303b (127.0.0.1) 69.21ms
+[I 181201 17:22:58 web:2106] 200 POST /api/smscode (127.0.0.1) 5.73ms
+[I 181201 17:23:02 web:2106] 200 POST /api/smscode (127.0.0.1) 4.67ms
+[I 181201 17:23:04 web:2106] 200 GET /api/imagecode?codeid=4e8b35f5-c444-4b4b-b0f8-a5c1f078139f&pcodeid=d9e71218-0834-4c19-9fcc-368b49dd3c6f (127.0.0.1) 20.78ms
+[I 181201 17:28:15 web:2106] 200 POST /api/smscode (127.0.0.1) 4.85ms
+[I 181201 17:28:15 web:2106] 200 GET /api/imagecode?codeid=5ab180a4-ba1a-4c44-ad70-b90159a9f8ef&pcodeid=4e8b35f5-c444-4b4b-b0f8-a5c1f078139f (127.0.0.1) 37.90ms
+[I 181201 17:28:17 web:2106] 200 GET /api/imagecode?codeid=29bf2bc6-f1fa-4204-b1d9-82e42a106ae0&pcodeid=5ab180a4-ba1a-4c44-ad70-b90159a9f8ef (127.0.0.1) 25.13ms
+[I 181201 17:28:17 web:2106] 200 GET /api/imagecode?codeid=3ae9e658-4bfb-40f4-bc27-6996aeae4234&pcodeid=29bf2bc6-f1fa-4204-b1d9-82e42a106ae0 (127.0.0.1) 21.13ms
+[I 181201 17:28:21 web:2106] 200 GET /api/imagecode?codeid=6f64a8f8-91ac-4b92-a8c4-982a2665b8e6&pcodeid=3ae9e658-4bfb-40f4-bc27-6996aeae4234 (127.0.0.1) 25.04ms
+[I 181201 17:28:22 web:2106] 200 GET /api/imagecode?codeid=fe6cb408-95ed-41b0-bc65-8aea532f7003&pcodeid=6f64a8f8-91ac-4b92-a8c4-982a2665b8e6 (127.0.0.1) 22.06ms
+[I 181201 17:28:23 web:2106] 200 GET /api/imagecode?codeid=7a978382-ea65-4f66-83a7-378653fcbfb4&pcodeid=fe6cb408-95ed-41b0-bc65-8aea532f7003 (127.0.0.1) 18.82ms
+[I 181201 17:28:29 web:2106] 200 GET /api/imagecode?codeid=e53d40e6-6366-44c0-8ab5-5ccedca4aa07&pcodeid=7a978382-ea65-4f66-83a7-378653fcbfb4 (127.0.0.1) 24.57ms
+[I 181201 17:28:30 web:2106] 200 GET /api/imagecode?codeid=a232854e-4033-43bd-93a9-56a366d78e9e&pcodeid=e53d40e6-6366-44c0-8ab5-5ccedca4aa07 (127.0.0.1) 18.06ms
+[I 181201 17:28:38 VerifyCode:65]  346
+[I 181201 17:28:38 web:2106] 200 POST /api/smscode (127.0.0.1) 10.04ms
+[I 181201 17:28:55 web:2106] 200 POST /api/register (127.0.0.1) 5.60ms
+[I 181201 17:29:08 web:2106] 200 POST /api/register (127.0.0.1) 4.67ms
+[I 181201 17:31:42 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/VerifyCode.py modified; restarting server
+[I 181201 17:32:18 web:2106] 200 GET /api/imagecode?codeid=1b02420b-27a1-4175-b013-11940959a02d&pcodeid=a232854e-4033-43bd-93a9-56a366d78e9e (127.0.0.1) 66.17ms
+[W 181201 17:32:39 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 10.68ms
+[I 181201 17:33:24 web:2106] 200 GET /api/imagecode?codeid=ce2a439c-280a-4fa1-b714-29cd88ffa581&pcodeid= (127.0.0.1) 19.18ms
+[I 181201 17:33:49 web:2106] 200 GET /api/imagecode?codeid=95c72a07-13bf-4e6d-9ba5-652d68fdf494&pcodeid=ce2a439c-280a-4fa1-b714-29cd88ffa581 (127.0.0.1) 17.52ms
+[I 181201 17:33:50 web:2106] 200 GET /api/imagecode?codeid=dac06803-0bbf-4437-b393-e4bc016e5fd7&pcodeid=95c72a07-13bf-4e6d-9ba5-652d68fdf494 (127.0.0.1) 16.52ms
+[I 181201 17:33:56 VerifyCode:65] 8077
+[I 181201 17:33:56 web:2106] 200 POST /api/smscode (127.0.0.1) 10.97ms
+[E 181201 17:34:13 Passport:57] 'Connection' object has no attribute 'excute'
+[I 181201 17:34:13 web:2106] 200 POST /api/register (127.0.0.1) 9.19ms
+[I 181201 17:34:20 web:2106] 200 GET /login.html (127.0.0.1) 16.58ms
+[I 181201 17:34:20 web:2106] 200 GET /static/css/ihome/login.css (127.0.0.1) 17.27ms
+[I 181201 17:34:20 web:2106] 200 GET /static/js/ihome/login.js (127.0.0.1) 7.04ms
+[I 181201 17:34:24 web:2106] 200 GET /api/imagecode?codeid=9245467e-ec01-4939-8f88-49c5fe5e7318&pcodeid= (127.0.0.1) 21.30ms
+[I 181201 17:36:33 web:2106] 200 GET /api/imagecode?codeid=0f8f6a7f-4afa-4491-999f-9e9b6e349089&pcodeid= (127.0.0.1) 30.82ms
+[I 181201 17:36:41 web:2106] 200 POST /api/register (127.0.0.1) 6.02ms
+[I 181201 17:36:55 web:2106] 200 GET /api/imagecode?codeid=6896d0f1-7bd2-4f6f-bc9f-b3e224f630d3&pcodeid= (127.0.0.1) 23.95ms
+[I 181201 17:37:03 web:2106] 200 POST /api/register (127.0.0.1) 6.41ms
+[I 181201 17:37:04 web:2106] 200 POST /api/smscode (127.0.0.1) 6.51ms
+[I 181201 17:37:05 web:2106] 200 GET /api/imagecode?codeid=6e9c34b5-6b8b-4ccb-bc4b-f5f81ae6a957&pcodeid=6896d0f1-7bd2-4f6f-bc9f-b3e224f630d3 (127.0.0.1) 19.67ms
+[I 181201 17:37:12 VerifyCode:65]  320
+[I 181201 17:37:12 web:2106] 200 POST /api/smscode (127.0.0.1) 7.68ms
+[E 181201 17:37:50 Passport:57] 'Connection' object has no attribute 'excute'
+[I 181201 17:37:50 web:2106] 200 POST /api/register (127.0.0.1) 11.24ms
+[I 181201 17:43:03 web:2106] 200 POST /api/register (127.0.0.1) 9.73ms
+[I 181201 17:43:05 web:2106] 200 POST /api/smscode (127.0.0.1) 5.45ms
+[I 181201 17:43:05 web:2106] 200 GET /api/imagecode?codeid=d4823e5c-c0c6-4fc7-b9c5-ee4c504e3207&pcodeid=6e9c34b5-6b8b-4ccb-bc4b-f5f81ae6a957 (127.0.0.1) 71.23ms
+[I 181201 17:43:06 web:2106] 200 GET /api/imagecode?codeid=6b442208-aea8-4ca9-8f36-934d19b6c7d9&pcodeid=d4823e5c-c0c6-4fc7-b9c5-ee4c504e3207 (127.0.0.1) 18.59ms
+[I 181201 17:43:13 VerifyCode:65] 7077
+[I 181201 17:43:13 web:2106] 200 POST /api/smscode (127.0.0.1) 10.99ms
+[I 181201 17:43:26 web:2106] 200 POST /api/register (127.0.0.1) 4.33ms
+[E 181201 17:43:44 Passport:59] 'Connection' object has no attribute 'excute'
+[I 181201 17:43:44 web:2106] 200 POST /api/register (127.0.0.1) 8.77ms
+[I 181201 17:44:10 web:2106] 200 POST /api/register (127.0.0.1) 5.96ms
+[I 181201 17:44:11 web:2106] 200 POST /api/register (127.0.0.1) 6.33ms
+[I 181201 17:44:11 web:2106] 200 POST /api/register (127.0.0.1) 6.17ms
+[I 181201 17:44:11 web:2106] 200 POST /api/register (127.0.0.1) 4.80ms
+[I 181201 17:44:12 web:2106] 200 POST /api/register (127.0.0.1) 5.36ms
+[I 181201 17:44:12 web:2106] 200 POST /api/register (127.0.0.1) 5.32ms
+[E 181201 17:48:57 web:1621] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/Passport.py", line 18, in post
+        mobile = self.json_args.get("mobile")
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 181201 17:48:57 web:2106] 500 POST /api/register (127.0.0.1) 9.67ms
+[E 181201 17:49:17 web:1621] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/Passport.py", line 18, in post
+        mobile = self.json_args.get("mobile")
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 181201 17:49:17 web:2106] 500 POST /api/register (127.0.0.1) 2.34ms
+[E 181201 17:49:19 web:1621] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/Passport.py", line 18, in post
+        mobile = self.json_args.get("mobile")
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 181201 17:49:19 web:2106] 500 POST /api/register (127.0.0.1) 1.75ms
+[E 181201 17:59:12 web:1621] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/Passport.py", line 18, in post
+        mobile = self.json_args.get("mobile")
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 181201 17:59:12 web:2106] 500 POST /api/register (127.0.0.1) 4.06ms
+[E 181201 17:59:24 web:1621] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/Passport.py", line 18, in post
+        mobile = self.json_args.get("mobile")
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 181201 17:59:24 web:2106] 500 POST /api/register (127.0.0.1) 1.93ms
+[E 181201 18:00:32 web:1621] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/Users/cui/Envs/env2/lib/python2.7/site-packages/tornado/web.py", line 1541, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/Users/cui/PycharmProjects/tornado/handlers/Passport.py", line 18, in post
+        mobile = self.json_args.get("mobile")
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 181201 18:00:32 web:2106] 500 POST /api/register (127.0.0.1) 2.42ms
+[W 181203 14:41:10 web:2106] 404 GET /api/house/index (127.0.0.1) 9.56ms
+[W 181203 14:41:10 web:2106] 404 GET /api/check_login (127.0.0.1) 1.11ms
+[W 181203 14:41:16 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.45ms
+[W 181203 14:41:33 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.55ms
+[I 181203 14:41:37 web:2106] 304 GET / (127.0.0.1) 23.13ms
+[W 181203 14:41:37 web:2106] 404 GET /api/check_login (127.0.0.1) 0.98ms
+[W 181203 14:41:37 web:2106] 404 GET /api/house/index (127.0.0.1) 1.47ms
+[W 181203 14:41:37 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.15ms
+[I 181203 14:41:44 web:2106] 200 GET /api/imagecode?codeid=50ff222a-41a6-47eb-8e6c-33db10b5c338&pcodeid= (127.0.0.1) 138.20ms
+[I 181203 14:41:57 web:2106] 200 GET /api/imagecode?codeid=b1443131-765a-499b-9ce1-c66f97115209&pcodeid=50ff222a-41a6-47eb-8e6c-33db10b5c338 (127.0.0.1) 19.16ms
+[I 181203 14:42:08 web:2106] 200 POST /api/smscode (127.0.0.1) 8.02ms
+[I 181203 14:42:17 web:2106] 200 GET /api/imagecode?codeid=56918c36-3e18-4604-8f55-cd0349b0cf88&pcodeid=b1443131-765a-499b-9ce1-c66f97115209 (127.0.0.1) 17.28ms
+[I 181203 14:42:24 web:2106] 200 GET /api/imagecode?codeid=9f3c0cd0-8308-43a0-a3df-bf3495355b17&pcodeid=56918c36-3e18-4604-8f55-cd0349b0cf88 (127.0.0.1) 16.20ms
+[I 181203 14:42:31 VerifyCode:65] 2871
+[I 181203 14:42:31 web:2106] 200 POST /api/smscode (127.0.0.1) 8.70ms
+[E 181203 14:44:14 Passport:59] 'Connection' object has no attribute 'excute'
+[I 181203 14:44:14 web:2106] 200 POST /api/register (127.0.0.1) 10.49ms
+[I 181203 14:45:18 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181203 14:45:59 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181203 15:01:53 autoreload:196] server.py modified; restarting server
+[I 181203 15:03:54 web:2106] 200 POST /api/smscode (127.0.0.1) 8.65ms
+[I 181203 15:03:54 web:2106] 200 GET /api/imagecode?codeid=b4c87579-ee02-4b39-8c89-915715739a66&pcodeid=9f3c0cd0-8308-43a0-a3df-bf3495355b17 (127.0.0.1) 80.58ms
+[I 181203 15:03:55 web:2106] 200 GET /api/imagecode?codeid=da4bd2ab-7bfb-42c6-923c-20f26626b740&pcodeid=b4c87579-ee02-4b39-8c89-915715739a66 (127.0.0.1) 23.87ms
+[I 181203 15:04:04 web:2106] 200 POST /api/smscode (127.0.0.1) 6.22ms
+[I 181203 15:04:05 web:2106] 200 GET /api/imagecode?codeid=cc7f55d4-6f5c-4f70-98a1-bfd96bcdd8e9&pcodeid=da4bd2ab-7bfb-42c6-923c-20f26626b740 (127.0.0.1) 19.75ms
+[I 181203 15:04:06 web:2106] 200 GET /api/imagecode?codeid=c9f6118e-e348-4d62-8a39-8be5ef3215e9&pcodeid=cc7f55d4-6f5c-4f70-98a1-bfd96bcdd8e9 (127.0.0.1) 17.03ms
+[I 181203 15:04:13 VerifyCode:65] 5121
+[I 181203 15:04:13 web:2106] 200 POST /api/smscode (127.0.0.1) 8.28ms
+[I 181203 15:04:25 Passport:55] insert into ih_user_profile(up_name, up_mobile, up_passwd) values(%(name)s, %(mobile)s, %(passwd)s);
+[E 181203 15:04:25 Passport:58] 'Connection' object has no attribute 'excute'
+[I 181203 15:04:25 web:2106] 200 POST /api/register (127.0.0.1) 9.81ms
+[I 181203 15:07:59 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181203 15:10:25 web:2106] 200 POST /api/register (127.0.0.1) 6.98ms
+[I 181203 15:10:27 web:2106] 200 POST /api/smscode (127.0.0.1) 4.69ms
+[I 181203 15:10:27 web:2106] 200 GET /api/imagecode?codeid=6c9267d4-8c37-4f6e-a57d-a8b9a0cde722&pcodeid=c9f6118e-e348-4d62-8a39-8be5ef3215e9 (127.0.0.1) 76.47ms
+[I 181203 15:10:28 web:2106] 200 GET /api/imagecode?codeid=1865b648-4bdf-4809-ade5-ad34682055d3&pcodeid=6c9267d4-8c37-4f6e-a57d-a8b9a0cde722 (127.0.0.1) 24.74ms
+[I 181203 15:10:33 web:2106] 200 POST /api/smscode (127.0.0.1) 5.29ms
+[I 181203 15:10:35 web:2106] 200 GET /api/imagecode?codeid=092dd07c-30f3-44aa-8275-2fc6a8a1d1a5&pcodeid=1865b648-4bdf-4809-ade5-ad34682055d3 (127.0.0.1) 22.24ms
+[I 181203 15:10:36 web:2106] 200 GET /api/imagecode?codeid=4e06dfd5-ea64-4a31-bbd3-ce1620494a1c&pcodeid=092dd07c-30f3-44aa-8275-2fc6a8a1d1a5 (127.0.0.1) 54.33ms
+[I 181203 15:10:37 web:2106] 200 GET /api/imagecode?codeid=2def87c3-aef4-4304-9b3e-851f7c06ecd0&pcodeid=4e06dfd5-ea64-4a31-bbd3-ce1620494a1c (127.0.0.1) 29.17ms
+[I 181203 15:10:44 VerifyCode:65] 8457
+[I 181203 15:10:44 web:2106] 200 POST /api/smscode (127.0.0.1) 11.14ms
+[I 181203 15:10:58 Passport:55] insert into ih_user_profile(up_name, up_mobile, up_passwd) values(%(name)s, %(mobile)s, %(passwd)s);
+[I 181203 15:10:58 web:2106] 200 POST /api/register (127.0.0.1) 159.21ms
+[W 181203 15:10:58 web:2106] 404 GET /api/check_login (127.0.0.1) 7.90ms
+[W 181203 15:10:58 web:2106] 404 GET /api/house/index (127.0.0.1) 1.56ms
+[W 181203 15:10:58 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.69ms
+[I 181203 15:13:12 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Passport.py modified; restarting server
+[I 181203 15:14:37 web:2106] 200 GET /api/imagecode?codeid=d365fd4e-9ec5-486e-a077-7b40971ad195&pcodeid= (127.0.0.1) 96.65ms
+[I 181203 15:14:44 web:2106] 200 GET /api/imagecode?codeid=e33ac1a1-fbe7-497a-9966-b8bdf350edb1&pcodeid=d365fd4e-9ec5-486e-a077-7b40971ad195 (127.0.0.1) 17.50ms
+[I 181203 15:14:45 web:2106] 200 GET /api/imagecode?codeid=7f31208c-d443-4ad0-b768-13e7b7c16be7&pcodeid=e33ac1a1-fbe7-497a-9966-b8bdf350edb1 (127.0.0.1) 16.38ms
+[I 181203 15:14:50 VerifyCode:65] 4105
+[I 181203 15:14:50 web:2106] 200 POST /api/smscode (127.0.0.1) 8.99ms
+[I 181203 15:15:04 Passport:55] insert into ih_user_profile(up_name, up_mobile, up_passwd) values(%(name)s, %(mobile)s, %(passwd)s);
+[I 181203 15:15:04 web:2106] 200 POST /api/register (127.0.0.1) 142.35ms
+[W 181203 15:15:05 web:2106] 404 GET /api/check_login (127.0.0.1) 4.12ms
+[W 181203 15:15:05 web:2106] 404 GET /api/house/index (127.0.0.1) 1.31ms
+[W 181203 15:15:05 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.15ms
+[I 181203 16:02:38 web:2106] 304 GET / (127.0.0.1) 14.40ms
+[I 181203 16:02:38 web:2106] 200 GET /api/check_login (127.0.0.1) 8.14ms
+[W 181203 16:02:38 web:2106] 404 GET /api/house/index (127.0.0.1) 6.64ms
+[I 181203 16:02:38 web:2106] 200 GET /favicon.ico (127.0.0.1) 5.35ms
+[I 181203 16:02:40 web:2106] 304 GET / (127.0.0.1) 0.88ms
+[I 181203 16:02:40 web:2106] 304 GET /api/check_login (127.0.0.1) 4.58ms
+[W 181203 16:02:40 web:2106] 404 GET /api/house/index (127.0.0.1) 2.30ms
+[I 181203 16:02:40 web:2106] 200 GET /favicon.ico (127.0.0.1) 2.53ms
+[W 181203 16:02:44 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.24ms
+[I 181203 16:02:51 web:2106] 200 GET /my.html (127.0.0.1) 3.21ms
+[I 181203 16:02:51 web:2106] 200 GET /static/js/ihome/my.js (127.0.0.1) 7.88ms
+[I 181203 16:02:51 web:2106] 200 GET /static/css/ihome/my.css (127.0.0.1) 5.32ms
+[W 181203 16:02:52 web:2106] 404 GET /api/profile (127.0.0.1) 1.19ms
+[I 181203 16:02:56 web:2106] 304 GET /api/check_login (127.0.0.1) 4.14ms
+[W 181203 16:02:56 web:2106] 404 GET /api/house/index (127.0.0.1) 0.90ms
+[W 181203 16:02:56 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.28ms
+[I 181203 16:03:20 web:2106] 304 GET / (127.0.0.1) 1.95ms
+[I 181203 16:03:21 web:2106] 304 GET /api/check_login (127.0.0.1) 6.55ms
+[W 181203 16:03:21 web:2106] 404 GET /api/house/index (127.0.0.1) 1.83ms
+[W 181203 16:03:21 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.74ms
+[I 181203 16:03:21 web:2106] 200 GET /favicon.ico (127.0.0.1) 2.96ms

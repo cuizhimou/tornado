@@ -165,9 +165,19 @@ $(document).ready(function() {
                 "X-XSRFTOKEN": getCookie("_xsrf"),
             },
             success: function (data) {
+                if (2 == data.errcode){
+                    $("#phone-code-err span").html(data.errmsg)
+                    $("#phone-code-err").show()
+                    return;
+                }
+                else if (3 == data.errcode){
+                    $("#mobile-err span").html(data.errmsg);
+                    $("#mobile-err").show()
+                }
                 if ("0" == data.errcode) {
                     location.href = "/";
-                } else if ("验证码过期" == data.errmsg || "验证码错误" == data.errmsg) {
+                }
+                else if ("验证码过期" == data.errmsg || "验证码错误" == data.errmsg) {
                     $("#phone-code-err>span").html(data.errmsg);
                     $("#phone-code-err").show();
                 }

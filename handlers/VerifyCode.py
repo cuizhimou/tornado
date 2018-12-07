@@ -59,7 +59,7 @@ class  SMSCodeHandler(BaseHandler):
 
         #若成功
         #生成随机验证码
-        sms_code = "%4d" % random.randint(0,999)
+        sms_code = "%4d" % random.randint(0,9999)
         try:
             self.redis.setex("sms_code_%s" % mobile,constants.SMS_CODE_EXPIPES_SECODES,sms_code)
             logging.info(sms_code)
