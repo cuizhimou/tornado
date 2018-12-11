@@ -101,7 +101,7 @@ class LoginHandler(BaseHandler):
         else:
             return self.write(dict(errcode=RET.DATAERR,errmsg="手机号或密码错误！"))
 
-class logoutHandler(BaseHandler):
+class LogoutHandler(BaseHandler):
     """退出登录"""
     @required_login
     def get(self):
