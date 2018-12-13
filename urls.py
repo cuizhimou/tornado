@@ -1,7 +1,7 @@
 #coding:utf-8
 
 import os
-from handlers import Passport,VerifyCode,Profile,House
+from handlers import Passport,VerifyCode,Profile,House,Orders
 from tornado.web import StaticFileHandler
 
 handlers = [
@@ -23,11 +23,11 @@ handlers = [
     (r'^/api/house/index$', House.IndexHandler), # 首页
     (r'^/api/house/list$', House.HouseListHandler), # 房屋过滤列表数据
     (r'^/api/house/list2$', House.HouseListRedisHandler), # 房屋过滤列表数据
-    # (r'^/api/order$', Orders.OrderHandler), # 下单
-    # (r'^/api/order/my$', Orders.MyOrdersHandler), # 我的订单，作为房客和房东同时适用
-    # (r'^/api/order/accept$', Orders.AcceptOrderHandler), # 接单
-    # (r'^/api/order/reject$', Orders.RejectOrderHandler), # 拒单
-    # (r'^/api/order/comment$', Orders.OrderCommentHandler),
+    (r'^/api/order$', Orders.OrderHandler), # 下单
+    (r'^/api/order/my$', Orders.MyOrdersHandler), # 我的订单，作为房客和房东同时适用
+    (r'^/api/order/accept$', Orders.AcceptOrderHandler), # 接单
+    (r'^/api/order/reject$', Orders.RejectOrderHandler), # 拒单
+    (r'^/api/order/comment$', Orders.OrderCommentHandler),
     (r"/(.*)",StaticFileHandler,dict(path=os.path.join(os.path.dirname(
         __file__),"html"),default_filename="index.html")),
 
