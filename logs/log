@@ -1078,3 +1078,101 @@
 [W 181210 15:14:35 web:2106] 404 GET /api/house/index (192.168.0.99) 1.42ms
 [I 181210 15:32:04 web:2106] 304 GET /api/check_login (192.168.0.29) 3.84ms
 [W 181210 15:32:04 web:2106] 404 GET /api/house/index (192.168.0.29) 1.44ms
+[I 181211 15:09:57 web:2106] 200 GET /static/images/logo@128x59.png (127.0.0.1) 18.33ms
+[I 181211 15:09:57 web:2106] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.30ms
+[I 181211 15:09:57 web:2106] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.55ms
+[I 181211 15:09:57 web:2106] 304 GET /api/check_login (127.0.0.1) 14.18ms
+[W 181211 15:09:57 web:2106] 404 GET /api/house/index (127.0.0.1) 7.80ms
+[I 181211 15:09:58 web:2106] 200 GET /favicon.ico (127.0.0.1) 3.02ms
+[I 181211 15:09:59 web:2106] 200 GET /login.html (127.0.0.1) 4.68ms
+[I 181211 15:09:59 web:2106] 200 GET /static/css/ihome/login.css (127.0.0.1) 8.99ms
+[I 181211 15:09:59 web:2106] 200 GET /static/js/ihome/login.js (127.0.0.1) 7.97ms
+[I 181211 15:10:11 web:2106] 200 POST /api/login (127.0.0.1) 17.45ms
+[I 181211 15:10:11 web:2106] 200 GET /api/check_login (127.0.0.1) 4.29ms
+[W 181211 15:10:11 web:2106] 404 GET /api/house/index (127.0.0.1) 2.35ms
+[W 181211 15:10:11 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.94ms
+[I 181211 15:10:17 web:2106] 200 GET /my.html (127.0.0.1) 5.00ms
+[I 181211 15:10:17 web:2106] 200 GET /static/css/ihome/my.css (127.0.0.1) 8.63ms
+[I 181211 15:10:17 web:2106] 200 GET /static/js/ihome/my.js (127.0.0.1) 5.76ms
+[E 181211 15:10:17 torndb:236] Error connecting to MySQL on 192.168.2.4
+[E 181211 15:10:17 Profile:46] (1054, "Unknown column 'up_user_id3' in 'where clause'")
+[I 181211 15:10:17 web:2106] 200 GET /api/profile (127.0.0.1) 16.65ms
+[I 181211 15:10:21 web:2106] 200 GET /profile.html (127.0.0.1) 3.50ms
+[I 181211 15:10:21 web:2106] 200 GET /static/css/ihome/profile.css (127.0.0.1) 11.61ms
+[I 181211 15:10:21 web:2106] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 6.92ms
+[I 181211 15:10:21 web:2106] 200 GET /static/js/ihome/profile.js (127.0.0.1) 4.62ms
+[E 181211 15:10:21 torndb:236] Error connecting to MySQL on 192.168.2.4
+[E 181211 15:10:21 Profile:46] (1054, "Unknown column 'up_user_id3' in 'where clause'")
+[I 181211 15:10:21 web:2106] 304 GET /api/profile (127.0.0.1) 109.14ms
+[I 181211 15:10:22 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 5.80ms
+[I 181211 15:10:24 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 6.30ms
+[I 181211 15:10:25 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 5.55ms
+[I 181211 15:10:25 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 3.87ms
+[I 181211 15:10:25 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 4.28ms
+[I 181211 15:10:26 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 5.55ms
+[I 181211 15:10:26 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 5.49ms
+[I 181211 15:10:46 web:2106] 200 POST /api/profile/name (127.0.0.1) 232.32ms
+[E 181211 15:10:53 torndb:236] Error connecting to MySQL on 192.168.2.4
+[E 181211 15:10:53 Profile:46] (1054, "Unknown column 'up_user_id3' in 'where clause'")
+[I 181211 15:10:53 web:2106] 304 GET /api/profile (127.0.0.1) 13.98ms
+[E 181211 15:10:55 torndb:236] Error connecting to MySQL on 192.168.2.4
+[E 181211 15:10:55 Profile:46] (1054, "Unknown column 'up_user_id3' in 'where clause'")
+[I 181211 15:10:55 web:2106] 304 GET /api/profile (127.0.0.1) 122.25ms
+[I 181211 15:12:34 autoreload:196] /Users/cui/PycharmProjects/tornado/handlers/Profile.py modified; restarting server
+[I 181211 15:12:44 web:2106] 200 POST /api/profile/avatar (127.0.0.1) 53.29ms
+[I 181211 15:13:01 web:2106] 200 POST /api/profile/name (127.0.0.1) 57.38ms
+[I 181211 15:13:09 web:2106] 200 GET /api/profile (127.0.0.1) 35.46ms
+[I 181211 15:13:10 web:2106] 304 GET /api/profile (127.0.0.1) 7.32ms
+[I 181211 15:13:14 web:2106] 304 GET /api/profile (127.0.0.1) 109.82ms
+[I 181211 15:13:16 web:2106] 200 GET /orders.html (127.0.0.1) 16.06ms
+[I 181211 15:13:16 web:2106] 200 GET /static/css/ihome/orders.css (127.0.0.1) 10.53ms
+[I 181211 15:13:16 web:2106] 200 GET /static/js/ihome/orders.js (127.0.0.1) 6.82ms
+[W 181211 15:13:16 web:2106] 404 GET /api/order/my?role=custom (127.0.0.1) 12.05ms
+[I 181211 15:13:17 web:2106] 304 GET /api/profile (127.0.0.1) 13.87ms
+[W 181211 15:13:19 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.76ms
+[I 181211 15:13:19 web:2106] 200 GET /api/check_login (127.0.0.1) 11.71ms
+[W 181211 15:13:19 web:2106] 404 GET /api/house/index (127.0.0.1) 1.47ms
+[I 181211 15:13:21 web:2106] 304 GET /api/profile (127.0.0.1) 6.62ms
+[W 181211 15:13:24 web:2106] 404 GET /api/order/my?role=custom (127.0.0.1) 1.14ms
+[I 181211 15:13:25 web:2106] 304 GET /api/profile (127.0.0.1) 8.74ms
+[I 181211 15:13:28 web:2106] 304 GET /api/check_login (127.0.0.1) 4.86ms
+[W 181211 15:13:28 web:2106] 404 GET /api/house/index (127.0.0.1) 1.65ms
+[W 181211 15:13:28 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.39ms
+[I 181211 15:13:29 web:2106] 304 GET /api/profile (127.0.0.1) 17.52ms
+[I 181211 15:13:33 web:2106] 304 GET /api/profile (127.0.0.1) 13.42ms
+[I 181211 15:13:46 web:2106] 200 POST /api/profile/name (127.0.0.1) 14.69ms
+[I 181211 15:14:09 web:2106] 304 GET /api/profile (127.0.0.1) 8.04ms
+[I 181211 15:14:10 web:2106] 304 GET /api/check_login (127.0.0.1) 5.73ms
+[W 181211 15:14:10 web:2106] 404 GET /api/house/index (127.0.0.1) 1.57ms
+[W 181211 15:14:10 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.76ms
+[I 181211 15:14:16 web:2106] 304 GET /api/profile (127.0.0.1) 9.75ms
+[I 181211 15:25:45 web:2106] 200 GET /auth.html (127.0.0.1) 3.02ms
+[I 181211 15:25:45 web:2106] 200 GET /static/js/ihome/auth.js (127.0.0.1) 4.69ms
+[W 181211 15:25:45 web:2106] 404 GET /api/profile/auth (127.0.0.1) 1.48ms
+[I 181211 15:25:47 web:2106] 304 GET /api/profile (127.0.0.1) 9.51ms
+[I 181211 15:25:49 web:2106] 200 GET /myhouse.html (127.0.0.1) 12.94ms
+[I 181211 15:25:49 web:2106] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 7.44ms
+[I 181211 15:25:49 web:2106] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 3.97ms
+[W 181211 15:25:49 web:2106] 404 GET /api/profile/auth (127.0.0.1) 1.52ms
+[I 181211 15:25:50 web:2106] 304 GET /api/profile (127.0.0.1) 11.08ms
+[I 181211 15:25:51 web:2106] 200 GET /lorders.html (127.0.0.1) 3.33ms
+[I 181211 15:25:51 web:2106] 200 GET /static/js/ihome/lorders.js (127.0.0.1) 4.46ms
+[W 181211 15:25:52 web:2106] 404 GET /api/order/my?role=landlord (127.0.0.1) 1.99ms
+[I 181211 15:25:53 web:2106] 304 GET /api/profile (127.0.0.1) 13.90ms
+[I 181211 15:26:01 web:2106] 304 GET /api/profile (127.0.0.1) 8.10ms
+[I 181211 15:26:04 web:2106] 304 GET /api/profile (127.0.0.1) 13.37ms
+[I 181211 15:26:05 web:2106] 304 GET /api/check_login (127.0.0.1) 5.75ms
+[W 181211 15:26:05 web:2106] 404 GET /api/house/index (127.0.0.1) 1.64ms
+[W 181211 15:26:05 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.76ms
+[I 181211 15:26:40 web:2106] 304 GET /api/check_login (127.0.0.1) 3.98ms
+[W 181211 15:26:40 web:2106] 404 GET /api/house/index (127.0.0.1) 1.01ms
+[W 181212 10:19:57 web:2106] 404 GET /api/house/index (127.0.0.1) 7.19ms
+[I 181212 10:19:57 web:2106] 304 GET /api/check_login (127.0.0.1) 22.14ms
+[I 181212 10:19:59 web:2106] 304 GET /api/profile (127.0.0.1) 20.55ms
+[I 181212 10:20:31 web:2106] 200 GET /register.html (127.0.0.1) 18.48ms
+[I 181212 10:20:31 web:2106] 200 GET /static/css/ihome/register.css (127.0.0.1) 4.00ms
+[I 181212 10:20:31 web:2106] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.07ms
+[I 181212 10:20:31 web:2106] 200 GET /api/imagecode?codeid=8edd072c-d16d-499f-a714-0ba1abc5b7eb&pcodeid= (127.0.0.1) 86.58ms
+[I 181212 10:24:15 web:2106] 304 GET /api/check_login (127.0.0.1) 7.93ms
+[W 181212 10:24:15 web:2106] 404 GET /api/house/index (127.0.0.1) 1.35ms
+[W 181212 10:24:15 web:2106] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.89ms
