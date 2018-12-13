@@ -1,3 +1,4 @@
+#coding:utf-8
 import logging
 import constants
 
@@ -10,6 +11,7 @@ class AvatarHandler(BaseHandler):
     """上传头像"""
     @required_login
     def post(self):
+        #图片文件的数据
         files = self.request.files.get("avatar")
         if not files:
             return self.write(dict(errcode=RET.PARAMERR,errmsg="未上传图片"))
@@ -39,7 +41,7 @@ class ProfileHandler(BaseHandler):
     def get(self):
         user_id = self.session.data['user_id']
         try:
-            ret = self.db.get("select up_name,up_mobile,up_avatar from ih_user_profile where up_user_id%s",user_id)
+            ret = self.db.get("select up_name,up_mobile,up_avatar from ih_user_profile where up_user_id=%s",user_id)
         except Exception as e:
             logging.error(e)
             return self.write({"errcode":RET.DBERR,"errmsg":"get data error"})
